@@ -6,8 +6,10 @@ function App() {
   const [nav, setNav] = useState(true);
 
   useEffect(() => {
-
-  }, [nav])
+    document.getElementById("open_nav").addEventListener("click", openNav);
+    document.getElementById("close_nav").addEventListener("click", closeNav);
+  
+  })
 
   function openNav() {
     setNav(true)
@@ -19,20 +21,21 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        { nav &&
-          <Nav />
-        }
-        <button onClick={openNav}>Open</button>
-        <button onClick={closeNav}>Close</button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+      <div id="nav" className={nav ? "visible" : ""}>
+        <Nav close={closeNav}/>
+      </div>
+
+      <button id="open_nav">Open</button>
+
+      <div id="main">
+        Main Content
+      </div>
       
-      
-      </header>
     </div>
   );
 }
+
+
 
 export default App;
