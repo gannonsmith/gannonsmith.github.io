@@ -7,15 +7,14 @@ function App() {
 
   useEffect(() => {
     document.getElementById("open_nav").addEventListener("click", openNav);
-    document.getElementById("close_nav").addEventListener("click", closeNav);
-  
-  })
+    
+  }, [nav])
 
   function openNav() {
     setNav(true)
   }
 
-  function closeNav() {
+  const closeNav = () => {
     setNav(false)
   }
 
@@ -28,10 +27,10 @@ function App() {
 
       <button id="open_nav">Open</button>
 
-      <div id="main">
+      <div id="main" className={nav ? "short" : ""}>
         Main Content
       </div>
-      
+
     </div>
   );
 }

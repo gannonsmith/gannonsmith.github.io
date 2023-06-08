@@ -6,32 +6,48 @@
 }
 
 .App {
-  background-color: #202020;
+  background-color: #272727;
   color: white;
 }
 
 #nav {
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  width: 0; 
+  position: fixed; 
+  z-index: 1;
+  top: 0; 
   left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; 
+  padding-top: 60px; /* Disable for slide in from top */
+  transition: 0.5s; 
 }
 
 #nav.visible {
-  height: 100%; /* 100% Full-height */
-  width: 20%; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%; 
+  width: 20%;
+  position: fixed;
+  z-index: 1; 
+  top: 0; 
   left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #202020; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  border: solid #303030;
 }
 
+#main {
+  height: 100%; 
+  width: 100%;
+  background-color: #272727;
+  position: fixed;
+  right: 0;
+  transition: 0.5s; 
+  border: solid white;
+  text-align: center;
+}
+
+#main.short {
+  width: 80%;
+}
 
 
