@@ -1,14 +1,21 @@
 #logo {
   border: solid gray;
-  position: absolute;
+  
 }
 
 .nav-body {
   text-align: center;
+  
 }
 
 #close_nav {
   top: 0;
   right: 0;
   position: absolute;
+}
+
+#portrait {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
 }
