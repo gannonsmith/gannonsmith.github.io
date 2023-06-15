@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Nav.css';
 
 export default function Nav() {
@@ -8,29 +8,7 @@ export default function Nav() {
   const [portfolio, setPortfolio] = useState(false);
   const [connect, setConnect] = useState(false);
 
-  useEffect(() => {
   
-  })
-
-  function handleClick( id ) {
-    switch (id) {
-      case 'home_folder':
-        setHome(!home);
-        break;
-      case 'about_folder':
-        setAbout(!about);
-        break;
-      case 'portfolio_folder':
-        setPortfolio(!portfolio);
-        break;
-      case 'connect_folder':
-        setConnect(!connect);
-        break;
-      default:
-        break;
-    }
-  }
-
   return (
     <div className='nav'>
       
@@ -39,19 +17,19 @@ export default function Nav() {
       <br></br>
       <div>
         <ul className="folders">
-          <li id="home_folder" className='folder' onClick={() => handleClick('home_folder')}> home</li>
+          <li id="home_folder" className='folder' onClick={() => setHome(prevHome => !prevHome)}> home</li>
           <ul className="subfolder" style={home ? {display: "block"}: {display: "none"}}>
             <li>elt</li>
           </ul>
-          <li id="about_folder" className='folder' onClick={() => handleClick("about_folder")}> about</li>
+          <li id="about_folder" className='folder' onClick={() => setAbout(prevAbout => !prevAbout)}> about</li>
           <ul className="subfolder" style={about ? {display: "block"}: {display: "none"}}>
             <li>elt</li>
           </ul>
-          <li id="portfolio_folder" className='folder' onClick={() => handleClick("portfolio_folder")}> portfolio</li>
+          <li id="portfolio_folder" className='folder' onClick={() => setPortfolio(prevPortfolio => !prevPortfolio)}> portfolio</li>
           <ul className="subfolder" style={portfolio ? {display: "block"}: {display: "none"}}>
             <li>elt</li>
           </ul>
-          <li id="connect_folder" className='folder' onClick={() => handleClick("connect_folder")}> connect</li>
+          <li id="connect_folder" className='folder' onClick={() => setConnect(prevConnect => !prevConnect)}> connect</li>
           <ul className="subfolder" style={connect ? {display: "block"}: {display: "none"}}>
             <li>elt</li>
             <li>elt</li>
