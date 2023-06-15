@@ -20,7 +20,7 @@
   list-style-type: '>';
   list-style-position: inside;
   text-align: left;
-  padding: 5px;
+  padding: 3px;
   font-family: Cascadia Code thin;
 }
 
@@ -32,6 +32,7 @@
 .folder:hover {
   background-color: #303030;
   cursor: pointer;
+  user-select: none;
 }
 
 

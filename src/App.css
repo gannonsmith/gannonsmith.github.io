@@ -31,5 +31,18 @@
   background-color: #272727;
   border: solid white;
   text-align: center;
+  padding-top: 200px;
+}
+
+#construction {
+  width: 200px;
+  height: 150px;
+  top: 20%;
+  background-color: #fce101;
+  color: black;
+  border: dashed black;
+  text-align: center;
+  margin: auto;
+  
 }
 

@@ -26,6 +26,8 @@ export default function Nav() {
       case 'connect_folder':
         setConnect(!connect);
         break;
+      default:
+        break;
     }
   }
 
