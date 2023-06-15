@@ -1,22 +1,18 @@
 import './App.css';
 import Nav from './Nav'
-import { useEffect} from 'react';
 
 function App() {
-  useEffect(() => {
-    
-  })
 
 
   return (
     <div className="App">
 
-      <div id="nav">
+      <div className="nav-container">
         <Nav />
       </div>
 
     
-      <div id="main">
+      <div className="main-container">
         Main Content
       </div>
 

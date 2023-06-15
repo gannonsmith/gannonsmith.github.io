@@ -3,19 +3,39 @@
   
 }
 
-.nav-body {
+.nav {
   text-align: center;
   
-}
-
-#close_nav {
-  top: 0;
-  right: 0;
-  position: absolute;
 }
 
 #portrait {
   max-width: 80%;
   height: auto;
   border-radius: 50%;
+}
+
+.folders {
+  margin: auto;
+  width: 200px;
+  list-style-type: '>';
+  list-style-position: inside;
+  text-align: left;
+  padding: 5px;
+  font-family: Cascadia Code thin;
+}
+
+.folder {
+  
+  padding: 3px;
+}
+
+.folder:hover {
+  background-color: #303030;
+  cursor: pointer;
+}
+
+
+.subfolder {
+  list-style-type: none;
+  transition: 0.5s;
 }
