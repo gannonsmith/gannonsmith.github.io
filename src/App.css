@@ -12,7 +12,7 @@
 
 #nav {
   height: 100%;
-  width: 0; 
+  width: 20%; 
   position: fixed; 
   z-index: 1;
   top: 0; 
@@ -21,13 +21,6 @@
   border: solid #303030;
   overflow-x: hidden; 
   padding-top: 60px; /* Disable for slide in from top */
-  transition: 0.5s; 
-}
-
-#nav.visible {
-   
-  width: 20%;
-  
   transition: 0.5s; 
 }
 
@@ -46,4 +39,8 @@
   width: 80%;
 }
 
-
+@media (max-width:1200px)  {
+  #nav {
+    width: 100%;
+  }
+}
