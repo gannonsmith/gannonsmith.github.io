@@ -8,31 +8,20 @@
   grid-template-columns: 250px auto;
   grid-template-rows: auto;
   grid-template-areas: 
-  "navigation main";
+  "navigation home";
 }
 
 .nav-container {
   align-self: navigation;
   background-color: #202020; 
-  border: solid #303030;
+  border-right: solid #303030;
 }
 
-.main-container {
-  align-self: main;
+.home-container {
+  align-self: home;
   background-color: #272727;
   text-align: center;
   padding-top: 200px;
 }
 
-#construction {
-  width: 200px;
-  height: 150px;
-  top: 20%;
-  background-color: #fce101;
-  color: black;
-  border: dashed black;
-  text-align: center;
-  margin: auto;
-  
-}
 

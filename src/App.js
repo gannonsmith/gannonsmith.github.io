@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './Nav'
+import Home from './Home'
 
 function App() {
 
@@ -12,20 +13,12 @@ function App() {
       </div>
 
     
-      <div className="main-container">
-        <div id="construction">
-          <b>!!!</b><br></br>
-          <b>Website Under Construction</b><br></br>
-          <b>!!!</b><br></br>
-          <b><a href="https://github.com/gannonsmith/gannonsmith.github.io">View progress</a></b>
-          
-        </div>
+      <div className='home-container'>
+        <Home />
       </div>
 
     </div>
   );
 }
-
-
 
 export default App;

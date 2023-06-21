@@ -12,10 +12,15 @@ export default function Nav() {
   return (
     <div className='nav'>
       
-      <img src={"/images/arv_photo.jpg"} id="portrait" alt="Gannon Smith"></img>
-      <span id="logo">Gannon Smith</span>
-      <br></br>
-      <div>
+      <div className='portrait-container'>
+        <img src={"/images/arv_photo.jpg"} className="portrait" alt="Gannon Smith"></img>
+      </div>
+
+      <div className='logo-container'>
+        <span id="logo">Gannon Smith</span>
+      </div>
+      
+      <div className='folder-container'>
         <ul className="folders">
           <li id="home_folder" className='folder' onClick={() => setHome(prevHome => !prevHome)}> home</li>
           <ul className="subfolder" style={home ? {display: "block"}: {display: "none"}}>
