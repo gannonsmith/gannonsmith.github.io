@@ -9,19 +9,44 @@
   grid-template-rows: auto;
   grid-template-areas: 
   "navigation home";
+
+  transition: 500ms;
+}
+
+.App#hidden {
+  grid-template-columns: 0px auto;
+  transition: 500ms;
 }
 
 .nav-container {
   align-self: navigation;
   background-color: #202020; 
-  border-right: solid #303030;
+  border-right: solid #353535 1px;
 }
 
-.home-container {
+.main-container {
+  padding: 16px;
   align-self: home;
   background-color: #272727;
-  text-align: center;
-  padding-top: 200px;
 }
+
+.nav-toggle {
+  width: 50px;
+  height: 54px;
+  background-color: #202020;  
+  border: solid #353535 1px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.menu-icon {
+  margin-top: 10px;
+  width: 28px;
+}
+
+
 
 

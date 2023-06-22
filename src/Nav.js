@@ -12,6 +12,7 @@ export default function Nav() {
   return (
     <div className='nav'>
       
+      
       <div className='portrait-container'>
         <img src={"/images/arv_photo.jpg"} className="portrait" alt="Gannon Smith"></img>
       </div>
