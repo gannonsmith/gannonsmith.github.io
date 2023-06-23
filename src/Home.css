@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 .home {
     
     display: grid;
     grid-template-columns: 60% auto;
-    grid-template-rows: auto;
+    grid-template-rows: 60% auto;
     grid-template-areas: 
-    "intro photo";
-    padding: 100px;
+    "intro photo"
+    "download photo";
+    padding: 80px;
+    font-family: 'Poppins';
+    justify-content: space-around;
 }
 
 .introduction {
@@ -14,6 +19,7 @@
 
 .full-portrait-container {
     align-self: photo;
+    user-select: none;
 }
 
 #full-portrait {
@@ -21,6 +27,27 @@
     border-radius: 100px;
 }
 
-.bigger {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#name {
+    font-size: 120%;
+    color: #9282F5;
+}
+
+#occupation {
+    font-size: 120%;
+    color: #9282F5;
+}
+
+.download-resume {
+    align-self: download;
+    text-align: center;
+}
+
+.download-container {
+    margin: auto;
+    background-color: #9282F5;
+    width: 200px;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 1px;
 }

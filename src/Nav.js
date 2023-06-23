@@ -14,7 +14,7 @@ export default function Nav() {
       
       
       <div className='portrait-container'>
-        <img src={"/images/arv_photo.jpg"} className="portrait" alt="Gannon Smith"></img>
+        <img src={"/static/images/arv_photo.jpg"} className="portrait" alt="Gannon Smith"></img>
       </div>
 
       <div className='logo-container'>

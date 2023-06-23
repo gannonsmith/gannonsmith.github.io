@@ -18,7 +18,7 @@ function App() {
     
       <div className='main-container'>
         <div className='nav-toggle' onClick={() => setNav(prevNav => !prevNav)}>
-          <img className='menu-icon' src='images/bars-solid.svg' alt='menu toggle'/>
+          <img className='menu-icon' src='/static/images/bars-solid.svg' alt='menu toggle'/>
         </div>
 
         <Home />
