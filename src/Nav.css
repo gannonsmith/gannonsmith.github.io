@@ -65,5 +65,13 @@
   list-style-type: none;
   transition: 0.5s;
   cursor: pointer;
-  margin: auto;
+  padding-left: 30px;
+}
+
+.page-link {
+  color: white;
+}
+
+.page-link:hover {
+  background-color: #303030;
 }

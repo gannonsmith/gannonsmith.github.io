@@ -26,24 +26,31 @@ export default function Nav() {
         <ul className="folders">
           <li id="home_folder" className='folder' onClick={() => setHome(prevHome => !prevHome)}> home</li>
           <ul className="subfolder" style={home ? {display: "block"}: {display: "none"}}>
-            <li className='page'>
-              <Link to={"./home"}>Home</Link>
-            </li>
+            <Link to={"./home"}>
+              <li className='page-link'>Home</li>
+            </Link>
+
           </ul>
           <li id="about_folder" className='folder' onClick={() => setAbout(prevAbout => !prevAbout)}> about</li>
           <ul className="subfolder" style={about ? {display: "block"}: {display: "none"}}>
-            <li className='page'>
-              <Link to={"./about"}>About</Link>
-            </li>
+            <Link to={"./about"}>
+              <li className='page-link'>About</li>
+            </Link>
           </ul>
           <li id="portfolio_folder" className='folder' onClick={() => setPortfolio(prevPortfolio => !prevPortfolio)}> portfolio</li>
           <ul className="subfolder" style={portfolio ? {display: "block"}: {display: "none"}}>
-            <li className='page'>elt</li>
+            <Link to={"./portfolio"}>
+              <li className='page-link'>Portfolio</li>
+            </Link>
           </ul>
           <li id="connect_folder" className='folder' onClick={() => setConnect(prevConnect => !prevConnect)}> connect</li>
           <ul className="subfolder" style={connect ? {display: "block"}: {display: "none"}}>
-            <li className='page'>elt</li>
-            <li className='page'>elt</li>
+            <Link to={"./connect"}>
+              <li className='page-link'>Top</li>
+            </Link>
+            <Link to={"./connect"}>
+              <li className='page-link'>Bottom</li>
+            </Link>
           </ul>
         </ul>
       </div>
