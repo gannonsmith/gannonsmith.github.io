@@ -4,7 +4,7 @@
     
     display: grid;
     grid-template-columns: 60% auto;
-    grid-template-rows: 60% auto;
+    grid-template-rows: 65% auto;
     grid-template-areas: 
     "intro photo"
     "download photo";
