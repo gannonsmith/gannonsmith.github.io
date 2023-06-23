@@ -1,7 +1,13 @@
 import './App.css';
 import Nav from './Nav'
-import Home from './Home'
+
 import { useState } from 'react';
+
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+
+import Home from "./components/Home";
+import About from "./components/About";
+
 
 function App() {
 
@@ -11,20 +17,27 @@ function App() {
   return (
     <div className="App" id={nav ? "nav-visible" : "hidden"}>
 
-      <div className='nav-container' >
-        <Nav />
+          <BrowserRouter>
+            <div className='nav-container' >
+              <Nav />
+            </div>
+
+            <div className='main-container'>
+              <div className='nav-toggle' onClick={() => setNav(prevNav => !prevNav)}>
+                <img className='menu-icon' src='/static/images/bars-solid.svg' alt='menu toggle'/>
+              </div>
+              <Routes>
+                <Route path='/' element={<Navigate to='/home' />} />
+                <Route path='/home' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                
+              </Routes>
+            
+            </div>
+
+          </BrowserRouter>
+
       </div>
-
-    
-      <div className='main-container'>
-        <div className='nav-toggle' onClick={() => setNav(prevNav => !prevNav)}>
-          <img className='menu-icon' src='/static/images/bars-solid.svg' alt='menu toggle'/>
-        </div>
-
-        <Home />
-      </div>
-
-    </div>
   );
 }
 

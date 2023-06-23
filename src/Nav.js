@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Nav.css';
+import { Link  } from 'react-router-dom';
 
 export default function Nav() {
 
@@ -25,20 +26,24 @@ export default function Nav() {
         <ul className="folders">
           <li id="home_folder" className='folder' onClick={() => setHome(prevHome => !prevHome)}> home</li>
           <ul className="subfolder" style={home ? {display: "block"}: {display: "none"}}>
-            <li>elt</li>
+            <li className='page'>
+              <Link to={"./home"}>Home</Link>
+            </li>
           </ul>
           <li id="about_folder" className='folder' onClick={() => setAbout(prevAbout => !prevAbout)}> about</li>
           <ul className="subfolder" style={about ? {display: "block"}: {display: "none"}}>
-            <li>elt</li>
+            <li className='page'>
+              <Link to={"./about"}>About</Link>
+            </li>
           </ul>
           <li id="portfolio_folder" className='folder' onClick={() => setPortfolio(prevPortfolio => !prevPortfolio)}> portfolio</li>
           <ul className="subfolder" style={portfolio ? {display: "block"}: {display: "none"}}>
-            <li>elt</li>
+            <li className='page'>elt</li>
           </ul>
           <li id="connect_folder" className='folder' onClick={() => setConnect(prevConnect => !prevConnect)}> connect</li>
           <ul className="subfolder" style={connect ? {display: "block"}: {display: "none"}}>
-            <li>elt</li>
-            <li>elt</li>
+            <li className='page'>elt</li>
+            <li className='page'>elt</li>
           </ul>
         </ul>
       </div>
