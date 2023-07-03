@@ -38,7 +38,7 @@
     padding: 20px;
 }
 
-.education-header {
+.about-tab-header {
     width: 100px;
     position: relative;
     left: 20px;
@@ -48,6 +48,7 @@
     border-left: solid #404040;
     border-right: solid #404040;
     border-radius: 10px 10px 0px 0px;
+    color: #9282F5;
     cursor: pointer;
     user-select: none;
 }
@@ -67,7 +68,6 @@
 
 .work-container {
     grid-area: work;
-    border: dashed yellow;
 }
 
 #umich-logo {
@@ -181,4 +181,59 @@
 #uofm {
     font-size: 30px;
     font-weight: 600;
+}
+
+.work-experiences {
+    display: grid;
+    padding: 20px;
+    background-color: #303030;
+    border: solid #505050;
+    border-radius: 20px;
+}
+
+.work-position {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo title";
+}
+
+.position-logo {
+    grid-area: logo;
+    width: 200px;
+    height: auto;
+}
+
+.position-title {
+    grid-area: title;
+    display: grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "title date";
+    padding: 12px;
+}
+
+.position-title-info {
+    grid-area: title;
+}
+
+.position-title-date {
+    grid-area: date;
+    color: #9282F5;
+}
+
+.position-title-company {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#ford-logo {
+    width: 200px;
+    height: auto;
+}
+
+#UMMed-logo {
+    width: 200px;
+    height: auto;
 }

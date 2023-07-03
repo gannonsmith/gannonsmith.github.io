@@ -27,8 +27,8 @@ export default function About() {
                 <h1>About</h1>
             </div>
             <div className='education-container'>
-                <div className='education-header' onClick={() => setShowClasses(prev => !prev)}>
-                    <span className='purple'>Education</span>
+                <div className='about-tab-header' onClick={() => setShowClasses(prev => !prev)}>
+                    Education
                 </div>
                 <div className='education-grid-container'>
                     <div className='education-logo-container'>
@@ -433,7 +433,39 @@ export default function About() {
                 </div>
             </div>
             <div className='work-container'>
-                <h3>Work</h3>
+                <div className='about-tab-header'>
+                    Work
+                </div>
+                <div className='work-experiences'>
+                    <div className='work-position'>
+                        <div className='position-logo'>
+                            <img id='ford-logo' src="/static/images/Ford_logo_flat.svg" alt='ford logo'></img>
+                        </div>
+                        <div className='position-title'>
+                            <div className='position-title-info'>
+                                <span className='position-title-company'>Ford Motor Company</span><br></br>
+                                Connected Vehicle Software Intern
+                            </div>
+                            <div className='position-title-date'>
+                                May 2023 - July 2023
+                            </div>
+                        </div>
+                    </div>
+                    <div className='work-position'>
+                        <div className='position-logo'>
+                            <img id='UMMed-logo' src="/static/images/Michigan_Medicine_logo.svg" alt='michigan medicine logo'></img>
+                        </div>
+                        <div className='position-title'>
+                            <div className='position-title-info'>
+                                <span className='position-title-company'>Michigan Medicine</span><br></br>
+                                Software Engineering Technician
+                            </div>
+                            <div className='position-title-date'>
+                                June 2022 - Present
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
