@@ -19,7 +19,7 @@
 }
 
 .nav-container {
-  align-self: navigation;
+  grid-area: navigation;
   background-color: #202020; 
   border-right: solid #353535 1px;
   overflow-y: hidden;
@@ -27,7 +27,7 @@
 
 .main-container {
   padding: 16px;
-  align-self: home;
+  grid-area: home;
   background-color: #272727;
   overflow-y: auto;
 }

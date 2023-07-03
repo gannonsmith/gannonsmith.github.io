@@ -14,11 +14,11 @@
 }
 
 .introduction {
-    align-self: intro;
+    grid-area: intro;
 }
 
 .full-portrait-container {
-    align-self: photo;
+    grid-area: photo;
     user-select: none;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .download-resume {
-    align-self: download;
+    grid-area: download;
     text-align: center;
 }
 

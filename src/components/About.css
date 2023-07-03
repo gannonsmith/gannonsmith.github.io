@@ -1,7 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
 .about {
-    border: dashed white;
+    margin: auto;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: 
+    "header"
+    "education"
+    "work";
+    grid-row-gap: 20px;
+    font-family: 'Poppins';
+}
+
+.about-header-container {
+    grid-area: header;
+}
+
+.education-container {
+    grid-area: education;
     
+}
+
+.education-grid-container {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "logo info"
+    "classes classes";
+    background-color: #303030;
+    border: solid #505050;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.education-header {
+    width: 100px;
+    position: relative;
+    left: 20px;
+    text-align: center;
+    background-color: #313131;
+    border-top: solid #404040;
+    border-left: solid #404040;
+    border-right: solid #404040;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.education-logo-container {
+    grid-area: logo;
+    padding-top: 10px;
+}
+
+.education-info {
+    grid-area: info;
+}
+
+.education-classes {
+    grid-area: classes;
+}
+
+.work-container {
+    grid-area: work;
+    border: dashed yellow;
+}
+
+#umich-logo {
+    width: 140px;
+    height: auto;
+}
+
+.bigger {
+    font-size: 120%;
+}
+
+#classes {
+    list-style: none;
+}
+
+.class {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "class"
+    "desc"
+    "projects";
+    margin: 20px 0;
+}
+
+.class-name {
+    grid-area: class;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.class-name:hover {
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.class-desc {
+    grid-area: desc;
+    padding-left: 5%;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.class-projects {
+    grid-area: projects;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.class-project {
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #9282F5;
+    border: solid #505050;
+    border-radius: 16px;
+    transition: 1s;
+}
+
+.info-date {
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info date";
+}
+
+.info-container {
+    grid-area: info;
+}
+
+.date-container {
+    grid-area: date;
+    color: #9282F5;
+    font-size: 120%;
+    font-weight: 300;
+    margin: auto;
+}
+
+#uofm {
+    font-size: 30px;
+    font-weight: 600;
 }

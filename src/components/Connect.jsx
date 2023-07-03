@@ -9,28 +9,71 @@ export default function Connect() {
             <div className='connect-info-container'>
                 <div className='info-block-container'>
                     <div className='info-block' id='email-info'>
-                        <i class='fa-solid fa-envelope fa-xl' style={{color: "#9282F5"}}></i><br></br>
-                        Email
+                        <div className='icon-container'>
+                            <i class='fa-solid fa-envelope fa-xl' style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            Email
+                        </div>
+                        <div className='description-container'>
+                            gannonsmithr@gmail.com
+                        </div>
                     </div>
+
                     <div className='info-block' id='location-info'>
-                        <i class="fa-solid fa-location-dot fa-xl" style={{color: "#9282F5"}}></i><br></br>
-                        Location
+                        <div className='icon-container'>
+                            <i class="fa-solid fa-location-dot fa-xl" style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            Location
+                        </div>
+                        <div className='description-container'>
+                            United States
+                        </div>
                     </div>
                     <div className='info-block' id='phone-info'>
-                        <i class="fa-solid fa-mobile-screen fa-xl" style={{color: "#9282F5"}}></i><br></br>
-                        Phone
+                        <div className='icon-container'>
+                            <i class="fa-solid fa-mobile-screen fa-xl" style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            Phone
+                        </div>
+                        <div className='description-container'>
+                            906-322-6919
+                        </div>
                     </div>
                     <div className='info-block' id='linkedin-info'>
-                        <i class="fa-solid fa-circle-user fa-xl" style={{color: "#9282F5"}}></i><br></br>
-                        LinkedIn
+                        <div className='icon-container'>
+                            <i class="fa-solid fa-circle-user fa-xl" style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            LinkedIn
+                        </div>
+                        <div className='description-container'>
+                            <a href="https://www.linkedin.com/in/gannonsmith/">gannonsmith</a>
+                        </div>
                     </div>
                     <div className='info-block' id='website-info'>
-                        <i class='fa-solid fa-globe fa-xl' style={{color: "#9282F5"}}></i><br></br>
-                        Website
+                        <div className='icon-container'>
+                            <i class='fa-solid fa-globe fa-xl' style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            Website
+                        </div>
+                        <div className='description-container'>
+                            <a href="https://gannonsmith.github.io/">gannonsmith.github.io</a>
+                        </div>
                     </div>
                     <div className='info-block' id='github-info'>
-                        <i class="fa-solid fa-code-branch fa-xl" style={{color: "#9282F5"}}></i><br></br>
-                        Github
+                        <div className='icon-container'>
+                            <i class="fa-solid fa-code-branch fa-xl" style={{color: "#9282F5"}}></i>
+                        </div>
+                        <div className='type-container'>
+                            Github
+                        </div>
+                        <div className='description-container'>
+                            <a href="https://github.com/gannonsmith">gannonsmith</a>
+                        </div>
                     </div>
                 </div>
                 
