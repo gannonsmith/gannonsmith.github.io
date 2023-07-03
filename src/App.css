@@ -41,6 +41,8 @@
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
+  position: sticky;
+  top: 10px;
 }
 
 .menu-icon {

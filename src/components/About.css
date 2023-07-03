@@ -78,7 +78,7 @@
 }
 
 #classes {
-    list-style: none;
+    padding: 0;
 }
 
 .class {
@@ -89,14 +89,14 @@
     "class"
     "desc"
     "projects";
-    margin: 20px 0;
+    margin: 0;
 }
 
 .class-name {
     grid-area: class;
     padding-left: 10px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 10px;
     user-select: none;
 }
@@ -148,7 +148,7 @@
 .date-container {
     grid-area: date;
     color: #9282F5;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 300;
     margin: auto;
 }
@@ -156,4 +156,9 @@
 #uofm {
     font-size: 30px;
     font-weight: 600;
+}
+
+.class-number {
+    color: #9282F5;
+    font-weight: 400;
 }
