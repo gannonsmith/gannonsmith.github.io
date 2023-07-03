@@ -48,6 +48,8 @@
     border-left: solid #404040;
     border-right: solid #404040;
     border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .education-logo-container {
@@ -99,6 +101,10 @@
     font-weight: 400;
     border-radius: 10px;
     user-select: none;
+    display: grid;
+    grid-template-columns: auto 50% 12%;
+    grid-template-rows: auto;
+    grid-template-areas: "name number date";
 }
 
 .class-name:hover {
@@ -106,11 +112,30 @@
     cursor: pointer;
 }
 
+.class-name-name {
+    grid-area: name;
+}
+
+.class-name-number {
+    grid-area: number;
+    color: #9282F5;
+    font-weight: 300;
+    margin-left: 0;
+}
+
+.class-name-date {
+    grid-area: date;
+    color: #9282F5;
+    font-size: 100%;
+    font-weight: 300;
+    margin: auto;
+}
+
 .class-desc {
     grid-area: desc;
     padding-left: 5%;
     font-size: 16px;
-    color: #CCCCCC;
+    color: #AAAAAA;
 }
 
 .class-projects {
@@ -156,9 +181,4 @@
 #uofm {
     font-size: 30px;
     font-weight: 600;
-}
-
-.class-number {
-    color: #9282F5;
-    font-weight: 400;
 }

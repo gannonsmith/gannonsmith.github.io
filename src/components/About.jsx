@@ -3,6 +3,7 @@ import './About.css';
 
 export default function About() {
 
+    const [showClasses, setShowClasses] = useState(true);
     const [class485, setClass485] = useState(false);
     const [class370, setClass370] = useState(false);
     const [class270, setClass270] = useState(false);
@@ -16,6 +17,9 @@ export default function About() {
     const [classmath215, setClassMath215] = useState(false);
     const [class140, setClass140] = useState(false);
     const [class100, setClass100] = useState(false);
+    const [class445, setClass445] = useState(false);
+    const [class376, setClass376] = useState(false);
+    const [class250, setClass250] = useState(false);
 
     return (
         <div className="about">
@@ -23,7 +27,7 @@ export default function About() {
                 <h1>About</h1>
             </div>
             <div className='education-container'>
-                <div className='education-header'>
+                <div className='education-header' onClick={() => setShowClasses(prev => !prev)}>
                     <span className='purple'>Education</span>
                 </div>
                 <div className='education-grid-container'>
@@ -43,18 +47,70 @@ export default function About() {
                         Bachelor of Science in Computer Science Engineering<br></br>
                         3.75 GPA 
                     </div>
-                    <div className='education-classes'>
+                    <div className='education-classes' style={showClasses ? {} : {display: "none"}}>
                         <h2>Classes</h2>
                         <ul id='classes'>
                             <li className='class'>
+                                <div className='class-name' onClick={() => setClass445(prev => !prev)}>
+                                    <div className='class-name-name'>
+                                        Machine Learning
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 445)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2023
+                                    </div>
+                                </div>
+                                <div className='class-desc' style={class445 ? {}: {display: "none"}}>
+                                Theory and implementation of state-of-the-art machine learning algorithms for large-scale real-world applications. Topics include supervised learning (regression, classification, kernel methods, neural networks, and regularization) and unsupervised learning (clustering, density estimation, and dimensionality reduction).<br></br>
+                                <br></br>
+                                </div>
+                            </li>
+                            <li className='class'>
+                                <div className='class-name' onClick={() => setClass376(prev => !prev)}>
+                                    <div className='class-name-name'>
+                                        Foundations of Computer Science
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 376)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2023
+                                    </div>
+                                </div>
+                                <div className='class-desc' style={class376 ? {}: {display: "none"}}>
+                                Models of computation: finite state machines, Turing machines. Decidable and undecidable problems. Polynomial time computability and paradigms of algorithm design. Computational complexity emphasizing NP-hardness. Coping with intractability. Exploiting intractability: cryptography.<br></br>
+                                <br></br>
+                                </div>
+                            </li>
+                            <li className='class'>
+                                <div className='class-name' onClick={() => setClass250(prev => !prev)}>
+                                    <div className='class-name-name'>
+                                        Statistics and Data Analysis
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (STATS 250)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2023
+                                    </div>
+                                </div>
+                                <div className='class-desc' style={class250 ? {}: {display: "none"}}>
+                                A one term course in applied statistical methodology from an analysis-of-data viewpoint. Frequency distributions; measures of location; mean, median, mode; measures of dispersion; variance; graphic presentation; elementary probability; populations and samples; sampling distributions; one sample univariate inference problems, and two sample problems; categorical data; regression and correlation; and analysis of variance. Use of computers in data analysis.<br></br>
+                                <br></br>
+                                </div>
+                            </li>
+                            <li className='class'>
                                 <div className='class-name' onClick={() => setClass485(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Web Systems <span className='class-number'>(EECS 485)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2023
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Web Systems
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 485)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2023
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class485 ? {}: {display: "none"}}>
@@ -81,13 +137,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass370(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Computer Organization <span className='class-number'>(EECS 370)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2023
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Computer Organization
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 370)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2023
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class370 ? {}: {display: "none"}}>
@@ -111,13 +168,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass270(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Logic Design <span className='class-number'>(EECS 270)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2023
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Logic Design
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 270)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2023
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class270 ? {}: {display: "none"}}>
@@ -144,13 +202,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass101(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Computational Linear Algebra <span className='class-number'>(ROB 101)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2023
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Computational Linear Algebra
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (ROB 101)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2023
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class101 ? {}: {display: "none"}}>
@@ -171,13 +230,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass281(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Data Structures and Algorithms <span className='class-number'>(EECS 281)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Data Structures and Algorithms
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 281)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class281 ? {}: {display: "none"}}>
@@ -201,13 +261,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass215(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Electronic Circuits <span className='class-number'>(EECS 215)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Electronic Circuits
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 215)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class215 ? {}: {display: "none"}}>
@@ -233,13 +294,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass240(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Physics: Electricity and Magnetism <span className='class-number'>(PHYSICS 240)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Physics: Electricity and Magnetism
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (PHYSICS 240)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class240 ? {}: {display: "none"}}>
@@ -249,13 +311,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass280(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Programming and Data Structures <span className='class-number'>(EECS 280)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Programming and Data Structures
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 280)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class280 ? {}: {display: "none"}}>
@@ -282,13 +345,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass203(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Discrete Math <span className='class-number'>(EECS 203)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Discrete Math
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (EECS 203)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class203 ? {}: {display: "none"}}>
@@ -298,13 +362,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass216(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Differential Equations <span className='class-number'>(MATH 216)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Winter 2022
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Differential Equations
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (MATH 216)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Winter 2022
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class216 ? {}: {display: "none"}}>
@@ -314,13 +379,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClassMath215(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Multivariable Calculus <span className='class-number'>(MATH 215)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2021
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Multivariable Calculus
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (MATH 215)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2021
                                     </div>
                                 </div>
                                 <div className='class-desc' style={classmath215? {}: {display: "none"}}>
@@ -330,13 +396,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass140(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Physics: Mechanics <span className='class-number'>(PHYSICS 140)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2021
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Physics: Mechanics
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (PHYSICS 140)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2021
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class140? {}: {display: "none"}}>
@@ -346,13 +413,14 @@ export default function About() {
                             </li>
                             <li className='class'>
                                 <div className='class-name' onClick={() => setClass100(prev => !prev)}>
-                                    <div className='info-date'>
-                                        <div className='info-container'>
-                                            Intro Engineering <span className='class-number'>(ENGR 100)</span>
-                                        </div>
-                                        <div className='date-container'>
-                                            Fall 2021
-                                        </div>
+                                    <div className='class-name-name'>
+                                        Intro Engineering
+                                    </div>
+                                    <div className='class-name-number'>
+                                        (ENGR 100)
+                                    </div>
+                                    <div className='class-name-date'>
+                                        Fall 2021
                                     </div>
                                 </div>
                                 <div className='class-desc' style={class100? {}: {display: "none"}}>
