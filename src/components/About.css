@@ -10,8 +10,8 @@
     grid-template-rows: 100px auto auto;
     grid-template-areas: 
     "header"
-    "education"
-    "work";
+    "work"
+    "education";
     grid-row-gap: 20px;
     font-family: 'Poppins';
 }
@@ -118,7 +118,7 @@
 
 .class-name-number {
     grid-area: number;
-    color: #9282F5;
+    color: #555555;
     font-weight: 300;
     margin-left: 0;
 }
