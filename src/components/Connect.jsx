@@ -4,7 +4,14 @@ export default function Connect() {
     return (
         <div className="connect">
             <div className='connect-header'>
-                <h1 id='contact-me'>Contact Me</h1>
+                <h1>
+                    Contact Me
+                    <br></br>
+                    <div className='staggered-lines'>
+                        <div className='top-line'></div>
+                        <div className='bottom-line'></div>
+                    </div>
+                </h1>
             </div>
             <div className='connect-info-container'>
                 <div className='info-block-container'>
@@ -50,7 +57,7 @@ export default function Connect() {
                             LinkedIn
                         </div>
                         <div className='description-container'>
-                            <a href="https://www.linkedin.com/in/gannonsmith/">gannonsmith</a>
+                            <a className='contact-link' href="https://www.linkedin.com/in/gannonsmith/">gannonsmith</a>
                         </div>
                     </div>
                     <div className='info-block' id='website-info'>
@@ -61,7 +68,7 @@ export default function Connect() {
                             Website
                         </div>
                         <div className='description-container'>
-                            <a href="https://gannonsmith.github.io/">gannonsmith.github.io</a>
+                            <a className='contact-link' href="https://gannonsmith.github.io/">gannonsmith.github.io</a>
                         </div>
                     </div>
                     <div className='info-block' id='github-info'>
@@ -72,7 +79,7 @@ export default function Connect() {
                             Github
                         </div>
                         <div className='description-container'>
-                            <a href="https://github.com/gannonsmith">gannonsmith</a>
+                            <a className='contact-link' href="https://github.com/gannonsmith">gannonsmith</a>
                         </div>
                     </div>
                 </div>

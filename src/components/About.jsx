@@ -24,7 +24,15 @@ export default function About() {
     return (
         <div className="about">
             <div className='about-header-container'>
-                <h1>About</h1>
+                <h1>
+                    About Me
+                    <br></br>
+                    <div className='staggered-lines'>
+                        <div className='top-line'></div>
+                        <div className='bottom-line'></div>
+                    </div>
+                </h1>
+                
             </div>
             <div className='education-container'>
                 <div className='about-tab-header' onClick={() => setShowClasses(prev => !prev)}>

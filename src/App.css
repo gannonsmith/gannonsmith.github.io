@@ -50,6 +50,19 @@
   width: 28px;
 }
 
+.staggered-lines {
+  display: grid;
+  height: 30px;
+}
 
+.top-line {
+  background-color: #9282F5;
+  width: 60px;
+  height: 6px;
+}
 
-
+.bottom-line {
+  background-color: #9282F5;
+  width: 40px;
+  height: 6px;
+}

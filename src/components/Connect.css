@@ -3,6 +3,8 @@
 .connect {
     margin: auto;
     height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 200px auto;
@@ -10,7 +12,6 @@
     "header"
     "contact-info";
     font-family: 'Poppins';
-    padding: 20px;
 }
 
 .connect-header {
@@ -24,19 +25,12 @@
 .info-block-container {
     margin: auto;
     height: 60%;
-    padding-right: 10%;
-    padding-left: 10%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: 
     "email location phone"
     "linkedin website github";
-}
-
-#contact-me {
-    font-size: 32px;
-    color: #9282F5;
 }
 
 .info-block {
@@ -72,6 +66,27 @@
     font-weight: 300;
     color: white;
 }
+
+.contact-link {
+    color: white;
+}
+
+.contact-link:link {
+    text-decoration: none;
+  }
+  
+  .contact-link:visited {
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: none;
+  }
+  
+  .contact-link:active {
+    text-decoration: none;
+  }
+  
 
 #email-info {
     grid-area: email;
