@@ -57,7 +57,7 @@ export default function Connect() {
                             LinkedIn
                         </div>
                         <div className='description-container'>
-                            <a className='contact-link' href="https://www.linkedin.com/in/gannonsmith/">gannonsmith</a>
+                            <a className='contact-link' style={{textDecoration:'underline'}} href="https://www.linkedin.com/in/gannonsmith/">gannonsmith</a>
                         </div>
                     </div>
                     <div className='info-block' id='website-info'>
@@ -68,7 +68,7 @@ export default function Connect() {
                             Website
                         </div>
                         <div className='description-container'>
-                            <a className='contact-link' href="https://gannonsmith.github.io/">gannonsmith.github.io</a>
+                            <a className='contact-link' style={{textDecoration:'underline'}} href="https://gannonsmith.github.io/">gannonsmith.github.io</a>
                         </div>
                     </div>
                     <div className='info-block' id='github-info'>
@@ -79,7 +79,7 @@ export default function Connect() {
                             Github
                         </div>
                         <div className='description-container'>
-                            <a className='contact-link' href="https://github.com/gannonsmith">gannonsmith</a>
+                            <a className='contact-link' style={{textDecoration:'underline'}} href="https://github.com/gannonsmith">gannonsmith</a>
                         </div>
                     </div>
                 </div>
