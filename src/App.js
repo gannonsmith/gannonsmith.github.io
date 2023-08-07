@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Portfolio from './components/Portfolio';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
 import Connect from './components/Connect';
 
 
@@ -32,7 +32,7 @@ function App() {
                 <Route path='/' element={<Navigate to='/home' />} />
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
-                <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/projects' element={<Projects />} />
                 <Route path='/connect' element={<Connect />} />
                 
               </Routes>

@@ -22,8 +22,7 @@
   margin: auto;
   max-width: 80%;
   border-radius: 50%;
-
-  animation: border-pulse 3s infinite;
+  border:solid 2px #999999;
 }
 
 .logo-container {
@@ -80,20 +79,4 @@
   padding: 30px;
   display: grid;
   color: white;
-}
-
-.status {
-  color: #999999;
-}
-
-#offline-orb {
-  width: 10px;
-  background-color: #999999;
-  border-radius: 25%;
-}
-
-@keyframes border-pulse {
-  50% {
-    border-color: rgba(32, 32, 32, 0);
-  }
 }

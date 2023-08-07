@@ -1,11 +1,11 @@
-import './Portfolio.css';
+import './Projects.css';
 
-export default function Portfolio() {
+export default function Projects() {
     return (
-        <div className='portfolio'>
+        <div className='projects'>
             <div className='header-container'>
                 <h1>
-                    Portfolio
+                    Projects
                     <br></br>
                     <div className='staggered-lines'>
                         <div className='top-line'></div>
@@ -15,7 +15,7 @@ export default function Portfolio() {
             </div>
             
             <div className='projects-container'>
-                Projects
+                
             </div>
         </div>
     )

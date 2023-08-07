@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-.portfolio {
+.projects {
     margin: auto;
     height: 100%;
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 200px auto;
     grid-template-areas: 
     "header"
     "projects";
     font-family: 'Poppins';
-    border: dashed white;
 }
 
 .header-container {
     grid-area: header;
-    font-weight: 500;
-    font-size: 32px;
-    border: dashed red;
 }
 
 .projects-container {
     grid-area: projects;
-    border: dashed yellow;
 }
