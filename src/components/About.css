@@ -37,8 +37,8 @@
 .timeline-container {
     height: auto;
     border-radius: 20px;
-    background-color: #333333;
-    border: solid #888888;
+    background-color: #2F2F2F;
+    border: solid 1px #666666;
 }
 
 .timeline-dot {

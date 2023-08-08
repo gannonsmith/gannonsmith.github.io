@@ -3,8 +3,8 @@
 .projects {
     margin: auto;
     height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 200px auto;
@@ -20,4 +20,22 @@
 
 .projects-container {
     grid-area: projects;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-container {
+    width: 280px;
+    height: auto;
+    padding: 20px;
+}
+
+.project {
+    border-radius: 10px;
+    background-color: #2F2F2F;
+    border: solid 1px #666666;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
 }

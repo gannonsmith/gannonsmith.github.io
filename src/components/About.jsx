@@ -51,8 +51,9 @@ export default function About() {
                                 <li>Foundations of Computer Science (EECS 376)</li>
                                 <li>Computer Organization (EECS 370)</li>
                                 <li>Data Structures and Algorithms (EECS 281)</li>
-                                <li>Discrete Mathematics (EECS 203)</li>
                                 <li>Programming and Data Structures (EECS 280)</li>
+                                <li>Logic Design (EECS 270)</li>
+                                <li>Discrete Mathematics (EECS 203)</li>
                                 <li>Computational Linear Algebra</li>
                                 <li>Calculus I - IV</li>
                             </ul>

@@ -8,7 +8,9 @@
     grid-template-areas: 
     "intro photo"
     "download photo";
-    padding: 80px;
+    padding-top: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
     font-family: 'Poppins';
     justify-content: space-around;
 }
