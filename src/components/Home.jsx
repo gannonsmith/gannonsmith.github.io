@@ -12,7 +12,7 @@ export default function Home() {
                 <img id="full-portrait" src="/static/images/arv_photo.jpg" alt="full portrait"></img>
             </div>
             <div className='download-resume'>
-                <a href="/static/docs/Gannon_Smith.pdf" download={"Gannon_Smith.pdf"}>
+                <a href="/static/docs/Gannon_Smith.pdf" target='_blank'>
                     <div className='download-container'>
                         <h4>Download Resume</h4>
                     </div>
