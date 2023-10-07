@@ -161,6 +161,31 @@ export default function About() {
                     <div className='timeline-template'>
                         <div className='timeline'>
                             <div className='timeline-dot'></div>
+                            <div style={{height: "110%"}} className='timeline-line'></div>
+                        </div>
+                        <div className='degree-date'>
+                            September 2023 - Current
+                        </div>
+                        <div className='degree-school'>
+                            University of Michigan - CSE
+                        </div>
+                        <div className='degree-title'>
+                            Undergraduate Researcher
+                        </div>
+                        <div className='degree-courses'>
+                            <ul class='outside-list'>
+                                <li>
+                                    Investigated the formal relation between race logic and linear temporal logic.
+                                </li>
+                                <li>
+                                    Analyzed the correctness and performance of using race logic as opposed to temporal logic for system specification.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='timeline-template'>
+                        <div className='timeline'>
+                            <div className='timeline-dot'></div>
                             <div style={{height: "90%"}} className='timeline-line'></div>
                         </div>
                         <div className='degree-date'>
