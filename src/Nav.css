@@ -4,10 +4,9 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 240px 80px 300px;
+  grid-template-rows: 240px 300px;
   grid-template-areas: 
   "picture"
-  "logo"
   "links";
   user-select: none;
 }
@@ -23,12 +22,6 @@
   max-width: 80%;
   border-radius: 50%;
   border:solid 2px #999999;
-}
-
-.logo-container {
-  grid-area: logo;
-  font-family: 'Poppins';
-  text-align: center;
 }
 
 #logo {
