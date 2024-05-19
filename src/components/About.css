@@ -6,12 +6,13 @@
     padding-left: 6%;
     padding-right: 6%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto ;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
-    "header header"
-    "intro intro"
-    "education work";
+    "header"
+    "intro"
+    "education"
+    "work";
     grid-row-gap: 20px;
     font-family: 'Poppins';
 }
@@ -42,11 +43,16 @@
 }
 
 .timeline-dot {
-    width: 12px;
-    height: 12px;
+    justify-content: center;
+    margin: auto;
+}
+
+.company-logo {
+    width: 64px;
+    height: 64px;
     border-radius: 12px;
     border: solid #9282F5;
-    background-color: #9282F5;;
+    display: block;
     margin: auto;
 }
 
@@ -82,6 +88,7 @@
 .degree-school {
     grid-area: school;
     padding-top: 10px;
+    font-size: large;
     font-weight: 1000;
     color: #9282F5;
 }

@@ -12,10 +12,6 @@ export default function Nav() {
         </Link>
       </div>
 
-      <div className='logo-container'>
-        <span id="logo">Gannon Smith</span><br></br>
-      </div>
-
       <div className='panel-container'>
         <div className='panel'>
           <Link to={"./home"}>

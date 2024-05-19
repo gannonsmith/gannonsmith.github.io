@@ -18,20 +18,20 @@ export default function About() {
             <div className='intro-container'>
                 <h2>I'm Gannon Smith: <span className='purple'>Software Engineer</span></h2>
                 <p>
-                    I'm a junior at the University of Michigan studying Computer Science Engineering and Electrical Engineering.
-                    I'm currently looking for internship and research opportunities. Please reach out if you have any questions!
+                    I'm a senior at the University of Michigan studying Computer Science Engineering and Electrical Engineering.
+                    I'm currently looking for internship and full-time opportunities. Please reach out if you have any questions!
                 </p>
             </div>
             <div id='education-container'>
                 <h1>Education</h1>
                 <div className='timeline-container'>
                     <div className='timeline-template'>
-                        <div className='timeline'>
-                            <div className='timeline-dot'></div>
+                        <div className='timeline'>  
+                            <img className='company-logo' src="/static/images/umichM.png" alt="michigan logo"></img>
                             <div style={{height: "110%"}} className='timeline-line'></div>
                         </div>
                         <div className='degree-date'>
-                            2021 - 2025
+                            2021 - 2024
                         </div>
                         <div className='degree-school'>
                             University of Michigan College of Engineering
@@ -40,32 +40,29 @@ export default function About() {
                             Bachelor's of Science in Engineering,
                             <br></br>
                             Computer Science Engineering
-                            <br></br>
-                            GPA: 3.77
                         </div>
                         <div className='degree-courses'>
                             Relevant Courses:<br></br>
                             <ul class='outside-list'>
-                                <li>Machine Learning (EECS 445)</li>
-                                <li>Web Systems (EECS 485)</li>
-                                <li>Foundations of Computer Science (EECS 376)</li>
-                                <li>Computer Organization (EECS 370)</li>
-                                <li>Data Structures and Algorithms (EECS 281)</li>
-                                <li>Programming and Data Structures (EECS 280)</li>
-                                <li>Logic Design (EECS 270)</li>
-                                <li>Discrete Mathematics (EECS 203)</li>
-                                <li>Computational Linear Algebra</li>
-                                <li>Calculus I - IV</li>
+                                <li>Advanced Operating Systems</li>
+                                <li>Computer Architecture</li>
+                                <li>Machine Learning</li>
+                                <li>Web Systems</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Computer Security</li>
+                                <li>Computer Science Theory</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Logic Design</li>
                             </ul>
                         </div>
                     </div>
                     <div className='timeline-template'>
                         <div className='timeline'>
-                            <div className='timeline-dot'></div>
-                            <div style={{height: "90%"}} className='timeline-line'></div>
+                        <img className='company-logo' src="/static/images/umichM.png" alt="michigan logo"></img>
+                            <div style={{height: "40%"}} className='timeline-line'></div>
                         </div>
                         <div className='degree-date'>
-                            2021 - 2025
+                            2021 - 2024
                         </div>
                         <div className='degree-school'>
                             University of Michigan College of Engineering
@@ -75,15 +72,6 @@ export default function About() {
                             <br></br>
                             Electrical Engineering
                             <br></br>
-                            GPA: 3.90
-                        </div>
-                        <div className='degree-courses'>
-                            Relevant Courses:<br></br>
-                            <ul class='outside-list'>
-                                <li>Computer Organization (EECS 370)</li>
-                                <li>Logic Design (EECS 270)</li>
-                                <li>Electronic Circuits (EECS 215)</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -91,9 +79,82 @@ export default function About() {
             <div id='work-container'>
                 <h1>Experience</h1>
                 <div className='timeline-container'>
+                <div className='timeline-template'>
+                        <div className='timeline'>
+                            <img className='company-logo' src="/static/images/pg-logo.jpg" alt="p&g logo"></img>
+                            <div style={{height: "110%"}} className='timeline-line'></div>
+                        </div>
+                        <div className='degree-date'>
+                            May 2024 - Current
+                        </div>
+                        <div className='degree-school'>
+                            Procter & Gamble
+                        </div>
+                        <div className='degree-title'>
+                            IT
+                            <br></br>
+                            Platform Engineer Intern
+                        </div>
+                        <div className='degree-courses'>
+                            <ul class='outside-list'>
+                                <li>
+                                    Ongoing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className='timeline-template'>
                         <div className='timeline'>
-                            <div className='timeline-dot'></div>
+                            <img className='company-logo' src="/static/images/mhacks_logo.jpg" alt="mhacks logo"></img>
+                            <div style={{height: "110%"}} className='timeline-line'></div>
+                        </div>
+                        <div className='degree-date'>
+                            Febuary 2024 - Current
+                        </div>
+                        <div className='degree-school'>
+                            MHacks
+                        </div>
+                        <div className='degree-title'>
+                            Tech Team
+                        </div>
+                        <div className='degree-courses'>
+                            <ul class='outside-list'>
+                                <li>
+                                    Built and organized Google x MHacks hackathon with 300+ hackers
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='timeline-template'>
+                        <div className='timeline'>
+                        <img className='company-logo' src="/static/images/michigan-cse-logo.jpg" alt="michigan cse logo"></img>
+                            <div style={{height: "110%"}} className='timeline-line'></div>
+                        </div>
+                        <div className='degree-date'>
+                            September 2023 - Current
+                        </div>
+                        <div className='degree-school'>
+                            University of Michigan - CSE
+                        </div>
+                        <div className='degree-title'>
+                            Physical Computation Laboratory
+                            <br></br>
+                            Undergraduate Researcher
+                        </div>
+                        <div className='degree-courses'>
+                            <ul class='outside-list'>
+                                <li>
+                                    Conducted research in the Physical Computation Laboratory, exploring the intersection between race logic and linear temporal logic for system verification
+                                </li>
+                                <li>
+                                    Analyzed the correctness and performance of using race logic as opposed to temporal logic for system specification
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='timeline-template'>
+                        <div className='timeline'>
+                            <img className='company-logo' src="/static/images/ford-logo.jpg" alt="ford logo"></img>
                             <div style={{height: "110%"}} className='timeline-line'></div>
                         </div>
                         <div className='degree-date'>
@@ -103,34 +164,28 @@ export default function About() {
                             Ford Motor Company
                         </div>
                         <div className='degree-title'>
-                            Model E Product Development
+                            Product Development
                             <br></br>
                             Connected Vehicle Software Intern
                         </div>
                         <div className='degree-courses'>
                             <ul class='outside-list'>
                                 <li>
-                                    Rainflow Algorithm: Researched and designed a real-time hysteresis loop counting algorithm in C to condense a
-                                    complicated load history from transmission torque into meaningful histograms for validation of consumer vehicle use.
-                                    Resulted in an efficient program on-board the Powertrain
+                                    Developed real-time hysteresis loop counting algorithm in C reducing application's PCM memory use by 98.3%
                                 </li>
                                 <li>
-                                    Algorithm Validation: Developed proof of concept for real-time adaptation of post-processing rainflow algorithm in
-                                    Python and compared various inputs and outputs, adding custom implementation of peak-valley filtering. Resulted in a
-                                    new modified algorithm that correctly identifies cycles.
+                                    Demonstrated proof of concept for algorithm in Python, adding modifications to prove 100% correctness
                                 </li>
                                 <li>
-                                    Testing: Designed model using MATLAB, Simulink, and Ford testing framework SWIFT to test algorithm in a realistic
-                                    vehicle environment in parallel with other PCM components. Resulted in verification of functioning components and
-                                    functioning system as a whole when simulated with real vehicle data.
+                                    Created model using MATLAB/Simulink to test algorithm in parallel with other PCM components
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className='timeline-template'>
                         <div className='timeline'>
-                            <div className='timeline-dot'></div>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
+                        <img className='company-logo' src="/static/images/michigan-medicine-logo.png" alt="michigan medicine logo"></img>
+                            <div style={{height: "70%"}} className='timeline-line'></div>
                         </div>
                         <div className='degree-date'>
                             June 2022 - May 2023
@@ -146,65 +201,10 @@ export default function About() {
                         <div className='degree-courses'>
                             <ul class='outside-list'>
                                 <li>
-                                    Automated Faculty Evaluation: Designed and developed Python application to automatically generate general and
-                                    annual reports for instructor evaluation based on data from thousands of forms in various databases. Resulted in a
-                                    streamlined process for generating and circulating reports based on department, name, or event.
+                                    Automated faculty evaluation report generation enabling a 98% reduction in labor time utilizing Python
                                 </li>
                                 <li>
-                                    Mi-TRAC: Collaborated with doctors and other professionals to discuss design and functional requirements for Michigan
-                                    Tool for Resident Assessment of Competencies (Mi-TRAC). Resulted in initial project grant and extension of funding
-                                    pending proof-of-concept.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                            <div className='timeline-dot'></div>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            September 2023 - Current
-                        </div>
-                        <div className='degree-school'>
-                            University of Michigan - CSE
-                        </div>
-                        <div className='degree-title'>
-                            Undergraduate Researcher
-                        </div>
-                        <div className='degree-courses'>
-                            <ul class='outside-list'>
-                                <li>
-                                    Investigated the formal relation between race logic and linear temporal logic.
-                                </li>
-                                <li>
-                                    Analyzed the correctness and performance of using race logic as opposed to temporal logic for system specification.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                            <div className='timeline-dot'></div>
-                            <div style={{height: "90%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            September 2022 - Current
-                        </div>
-                        <div className='degree-school'>
-                            Tamarack Tower
-                        </div>
-                        <div className='degree-title'>
-                            Web Developer and Server Administrator
-                        </div>
-                        <div className='degree-courses'>
-                            <ul class='outside-list'>
-                                <li>
-                                    Maintained web pages for nonprofit organization that promotes education by awarding scholarships to students
-                                </li>
-                                <li>
-                                    Developed an automated email system using cron and JavaScript to notify administrators of donations and provide weekly
-                                    summaries
+                                Collaborated with faculty to determine functional requirements for Mi-TRAC achieving grant of $150,000
                                 </li>
                             </ul>
                         </div>
