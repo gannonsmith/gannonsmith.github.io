@@ -4,10 +4,11 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 240px 300px;
+  grid-template-rows: 240px 400px auto;
   grid-template-areas: 
   "picture"
-  "links";
+  "panel"
+  "socials";
   user-select: none;
 }
 
@@ -24,11 +25,6 @@
   border:solid 2px #999999;
 }
 
-#logo {
-  font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 28px;
-}
 
 #logo:hover {
   cursor: pointer;
@@ -47,11 +43,11 @@
 }
 
 .nav-link {
-  font-family: 'Poppins';
+  font-family: 'consolas';
   font-weight: 500;
   width: 40%;
   margin: auto;
-  color: #DDDDDD;
+  color: black;
   transition: 0.3s;
   border-bottom: 2px solid #999999;
 }
@@ -60,16 +56,28 @@
   font-weight: 600;
   width: 60%;
   transition: 0.3s;
+  border-bottom: 2px solid #9282F5;
 }
 
 .panel {
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .panel-container {
-  grid-area: links;
+  grid-area: panel;
   padding: 30px;
   display: grid;
-  color: white;
+  color: black;
+}
+
+.socials-container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.icon-container {
+  padding: 10px;
 }

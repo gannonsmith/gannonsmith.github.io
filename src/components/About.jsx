@@ -1,5 +1,20 @@
 import './About.css';
 
+function TimelinePoint({image_path, image_alt, line_height, date, company, title, data}) {
+    return (
+        <div className='timeline-template'>
+            <div className='timeline'>  
+                <img className='company-logo' src={image_path} alt={image_alt}></img>
+                <div style={{height: line_height}} className='timeline-line'></div>
+            </div>
+            <div className='degree-date'>{date}</div>
+            <div className='degree-school'>{company}</div>
+            <div className='degree-title'>{title}</div>
+            <div className='degree-courses'>{data}</div>
+        </div>
+    )
+}
+
 export default function About() {
 
     return (
@@ -25,123 +40,57 @@ export default function About() {
             <div id='education-container'>
                 <h1>Education</h1>
                 <div className='timeline-container'>
-                    <div className='timeline-template'>
-                        <div className='timeline'>  
-                            <img className='company-logo' src="/static/images/umichM.png" alt="michigan logo"></img>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            2021 - 2024
-                        </div>
-                        <div className='degree-school'>
-                            University of Michigan College of Engineering
-                        </div>
-                        <div className='degree-title'>
-                            Bachelor's of Science in Engineering,
-                            <br></br>
-                            Computer Science Engineering
-                        </div>
-                        <div className='degree-courses'>
-                            Relevant Courses:<br></br>
-                            <ul class='outside-list'>
-                                <li>Advanced Operating Systems</li>
-                                <li>Computer Architecture</li>
-                                <li>Machine Learning</li>
-                                <li>Web Systems</li>
-                                <li>Artificial Intelligence</li>
-                                <li>Computer Security</li>
-                                <li>Computer Science Theory</li>
-                                <li>Data Structures and Algorithms</li>
-                                <li>Logic Design</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                        <img className='company-logo' src="/static/images/umichM.png" alt="michigan logo"></img>
-                            <div style={{height: "40%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            2021 - 2024
-                        </div>
-                        <div className='degree-school'>
-                            University of Michigan College of Engineering
-                        </div>
-                        <div className='degree-title'>
-                            Minor in Engineering,
-                            <br></br>
-                            Electrical Engineering
-                            <br></br>
-                        </div>
-                    </div>
+                    <TimelinePoint 
+                        image_path='/static/images/umichM.png' image_alt='michigan logo' line_height='80%' 
+                        date='2021 - 2024' company='University of Michigan College of Engineering' 
+                        title={<>Bachelor's of Science in Engineering,<br></br>Computer Science Engineering<br></br>Minor in Electrical Engineering</>} 
+                        data={
+                        <>Relevant Courses:<br></br>
+                        <ul class='outside-list'>
+                            <li>Advanced Operating Systems</li>
+                            <li>Computer Architecture</li>
+                            <li>Machine Learning</li>
+                            <li>Web Systems</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Computer Security</li>
+                            <li>Computer Science Theory</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Logic Design</li>
+                        </ul></>
+                        }
+                    />
                 </div>
             </div>
             <div id='work-container'>
                 <h1>Experience</h1>
                 <div className='timeline-container'>
-                <div className='timeline-template'>
-                        <div className='timeline'>
-                            <img className='company-logo' src="/static/images/pg-logo.jpg" alt="p&g logo"></img>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            May 2024 - Current
-                        </div>
-                        <div className='degree-school'>
-                            Procter & Gamble
-                        </div>
-                        <div className='degree-title'>
-                            IT
-                            <br></br>
-                            Platform Engineer Intern
-                        </div>
-                        <div className='degree-courses'>
-                            <ul class='outside-list'>
-                                <li>
-                                    Ongoing
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                            <img className='company-logo' src="/static/images/mhacks_logo.jpg" alt="mhacks logo"></img>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            Febuary 2024 - Current
-                        </div>
-                        <div className='degree-school'>
-                            MHacks
-                        </div>
-                        <div className='degree-title'>
-                            Tech Team
-                        </div>
-                        <div className='degree-courses'>
+                    <TimelinePoint 
+                        image_path='/static/images/pg-logo.jpg' image_alt='p&g logo' line_height='110%' 
+                        date='May 2024 - Current' company='Procter & Gamble' 
+                        title={<>GTO Database Engineering<br></br>Database Engineering Intern</>} 
+                        data={
+                        <ul class='outside-list'>
+                            <li>Building Oracle entitlement tracking application to manage thousands of instances</li>
+                        </ul>
+                        }
+                    />
+                    <TimelinePoint 
+                        image_path='/static/images/mhacks_logo.jpg' image_alt='mhacks logo' line_height='110%' 
+                        date='Febuary 2024 - Current' company='MHacks' 
+                        title={<>Tech Team</>} 
+                        data={
                             <ul class='outside-list'>
                                 <li>
                                     Built and organized Google x MHacks hackathon with 300+ hackers
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                        <img className='company-logo' src="/static/images/michigan-cse-logo.jpg" alt="michigan cse logo"></img>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            September 2023 - Current
-                        </div>
-                        <div className='degree-school'>
-                            University of Michigan - CSE
-                        </div>
-                        <div className='degree-title'>
-                            Physical Computation Laboratory
-                            <br></br>
-                            Undergraduate Researcher
-                        </div>
-                        <div className='degree-courses'>
+                        }
+                    />
+                    <TimelinePoint 
+                        image_path='/static/images/michigan-cse-logo.jpg' image_alt='michigan cse logo' line_height='110%' 
+                        date='September 2023 - Current' company='University of Michigan - CSE' 
+                        title={<>Physical Computation Laboratory<br></br>Undergraduate Researcher</>} 
+                        data={
                             <ul class='outside-list'>
                                 <li>
                                     Conducted research in the Physical Computation Laboratory, exploring the intersection between race logic and linear temporal logic for system verification
@@ -150,25 +99,13 @@ export default function About() {
                                     Analyzed the correctness and performance of using race logic as opposed to temporal logic for system specification
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                            <img className='company-logo' src="/static/images/ford-logo.jpg" alt="ford logo"></img>
-                            <div style={{height: "110%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            May 2023 - July 2023
-                        </div>
-                        <div className='degree-school'>
-                            Ford Motor Company
-                        </div>
-                        <div className='degree-title'>
-                            Product Development
-                            <br></br>
-                            Connected Vehicle Software Intern
-                        </div>
-                        <div className='degree-courses'>
+                        }
+                    />
+                    <TimelinePoint 
+                        image_path='/static/images/ford-logo.jpg' image_alt='ford logo' line_height='110%' 
+                        date='May 2023 - July 2023' company='Ford Motor Company' 
+                        title={<>Product Development<br></br>Connected Vehicle Software Intern</>} 
+                        data={
                             <ul class='outside-list'>
                                 <li>
                                     Developed real-time hysteresis loop counting algorithm in C reducing application's PCM memory use by 98.3%
@@ -180,25 +117,13 @@ export default function About() {
                                     Created model using MATLAB/Simulink to test algorithm in parallel with other PCM components
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className='timeline-template'>
-                        <div className='timeline'>
-                        <img className='company-logo' src="/static/images/michigan-medicine-logo.png" alt="michigan medicine logo"></img>
-                            <div style={{height: "70%"}} className='timeline-line'></div>
-                        </div>
-                        <div className='degree-date'>
-                            June 2022 - May 2023
-                        </div>
-                        <div className='degree-school'>
-                            Michigan Medicine
-                        </div>
-                        <div className='degree-title'>
-                            3D & Innovations Lab
-                            <br></br>
-                            Software Engineering Technician
-                        </div>
-                        <div className='degree-courses'>
+                        }
+                    />
+                    <TimelinePoint 
+                        image_path='/static/images/michigan-medicine-logo.png' image_alt='michigan medicine logo' line_height='70%' 
+                        date='June 2022 - May 2023' company='Michigan Medicine' 
+                        title={<>3D & Innovations Lab<br></br>Software Engineering Technician</>} 
+                        data={
                             <ul class='outside-list'>
                                 <li>
                                     Automated faculty evaluation report generation enabling a 98% reduction in labor time utilizing Python
@@ -207,8 +132,8 @@ export default function About() {
                                 Collaborated with faculty to determine functional requirements for Mi-TRAC achieving grant of $150,000
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                        }
+                    />
                 </div>
             </div>
         </div>

@@ -1,15 +1,15 @@
 
 .App {
-  background-color: #272727;
-  color: white;
-  width: 100vw;
-  height: 100vh;
+  background-color: white;
+  color: black;
+  width: 97vw;
+  height: 95vh;
   display: grid;
   grid-template-columns: 260px auto;
   grid-template-rows: auto;
   grid-template-areas: 
   "navigation home";
-
+  padding: 1%;
   transition: 500ms;
 }
 
@@ -20,22 +20,23 @@
 
 .nav-container {
   grid-area: navigation;
-  background-color: #202020; 
-  border-right: solid #353535 1px;
+  background-color: rgb(238, 238, 238);
+  border: solid #353535 1px;
+  border-radius: 64px;
   overflow-y: hidden;
 }
 
 .main-container {
   padding: 16px;
   grid-area: home;
-  background-color: #272727;
+  background-color: white;
   overflow-y: auto;
 }
 
 .nav-toggle {
   width: 50px;
   height: 54px;
-  background-color: #202020;  
+  background-color: rgb(238, 238, 238); 
   border: solid #353535 1px;
   text-align: center;
   border-radius: 10px;

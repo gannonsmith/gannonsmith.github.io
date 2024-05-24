@@ -1,22 +1,27 @@
 import './Home.css';
 
+function HomeBullet({text}) {
+    return (
+        <div className='homebullet'>
+            <p>{text}</p>
+        </div>
+    )
+}
+
 export default function Home() {
 
     return (
         <div className='home'>
             <div className='introduction'>
-                <h1>My name is <span className='emphasis'>Gannon Smith</span></h1>
-                <h3>And I'm a <span className='emphasis'>computer science student</span><br></br> with a passion for <span className='emphasis'>software engineering</span><br></br> and <span className='emphasis'>machine learning</span></h3>
+                <h1>hey! i'm gannon.</h1>
+                <h2>big <span className='emphasis'>tech</span> guy</h2>
             </div>
-            <div className='full-portrait-container'>
-                <img id="full-portrait" src="/static/images/prof_headshot.JPG" alt="full portrait"></img>
-            </div>
-            <div className='download-resume'>
-                <a href="/static/docs/Gannon_Smith.pdf" target='_blank'>
-                    <div className='download-container'>
-                        <h4>Download Resume</h4>
-                    </div>
-                </a>
+            <div className='small-talk'>
+                <HomeBullet text="i'm a computer science student" />
+                <HomeBullet text="i entered college as a CE student" />
+                <HomeBullet text="i have a passion for machine learning and ai" />
+                <HomeBullet text="some things i like to do are" />
+                <HomeBullet text="currently i am interning at procter & gamble in cincinnati" />
             </div>
         </div>
     )

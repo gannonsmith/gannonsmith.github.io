@@ -38,7 +38,7 @@
 .timeline-container {
     height: auto;
     border-radius: 20px;
-    background-color: #2F2F2F;
+    background-color: rgb(238, 238, 238);
     border: solid 1px #666666;
 }
 
@@ -82,7 +82,7 @@
 .degree-date {
     grid-area: date;
     padding-top: 10px;
-    color: #CCCCCC;
+    color: #777777;
 }
 
 .degree-school {
