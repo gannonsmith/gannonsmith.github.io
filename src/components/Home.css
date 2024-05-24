@@ -23,10 +23,12 @@
 }
 
 .homebullet {
-    border: solid red 1px;
+    border: red;
 }
 
 .emphasis {
     font-size: 120%;
     color: #9282F5;
+    border-bottom: solid #9282F5 4px;
+    transition: 1s;
 }

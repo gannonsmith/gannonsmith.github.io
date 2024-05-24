@@ -1,5 +1,7 @@
 import './Home.css';
 
+import { useState, useEffect } from 'react';
+
 function HomeBullet({text}) {
     return (
         <div className='homebullet'>
@@ -8,13 +10,39 @@ function HomeBullet({text}) {
     )
 }
 
-export default function Home() {
+function RotatingText({text_list}) {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+        setCurrentIndex(prevIndex => (prevIndex + 1) % text_list.length);
+        }, 1400);
+
+        // Clean up the interval on component unmount
+        return () => clearInterval(intervalId);
+    }, [text_list.length]);
+
+    return (
+        <>{text_list[currentIndex]}</>
+    );
+}
+
+export default function Home() {
+    const labels = [
+        '', 
+        'tech', 
+        'ml', 
+        'hackathon',
+        'nlp',
+        'cs',
+        'database'
+    ];
+    
     return (
         <div className='home'>
             <div className='introduction'>
                 <h1>hey! i'm gannon.</h1>
-                <h2>big <span className='emphasis'>tech</span> guy</h2>
+                <h2>big <span className='emphasis'><RotatingText text_list={labels}/></span> guy</h2>
             </div>
             <div className='small-talk'>
                 <HomeBullet text="i'm a computer science student" />

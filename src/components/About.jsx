@@ -20,14 +20,11 @@ export default function About() {
     return (
         <div className="about">
             <div className='about-header-container'>
-                <h1>
-                    About Me
-                    <br></br>
-                    <div className='staggered-lines'>
-                        <div className='top-line'></div>
-                        <div className='bottom-line'></div>
-                    </div>
-                </h1>
+                <h1>about me</h1>
+                <div className='staggered-lines'>
+                    <div className='top-line'></div>
+                    <div className='bottom-line'></div>
+                </div>
                 
             </div>
             <div className='intro-container'>
