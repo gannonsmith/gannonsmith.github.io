@@ -35,11 +35,11 @@ export default function Nav() {
 
       <div className='panel-container'>
         <Panel link='home' />
+        <Panel link='about' />
         <Panel link='projects' />
         <Panel link='reviews' />
         <Panel link='thoughts' />
         <Panel link='etc' />
-        <Panel link='about' />
       </div>
       <div className='socials-container'>
         <Social icon='fa fa-envelope fa-xl' link='mailto:gannonsmithr@gmail.com' />

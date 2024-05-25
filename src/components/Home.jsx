@@ -16,7 +16,7 @@ function RotatingText({text_list}) {
     useEffect(() => {
         const intervalId = setInterval(() => {
         setCurrentIndex(prevIndex => (prevIndex + 1) % text_list.length);
-        }, 1400);
+        }, 1000);
 
         // Clean up the interval on component unmount
         return () => clearInterval(intervalId);
@@ -29,20 +29,23 @@ function RotatingText({text_list}) {
 
 export default function Home() {
     const labels = [
-        '', 
         'tech', 
         'ml', 
         'hackathon',
         'nlp',
         'cs',
-        'database'
+        'database',
+        'swe',
+        'cloud',
+        'linux',
+        'umich'
     ];
     
     return (
         <div className='home'>
             <div className='introduction'>
                 <h1>hey! i'm gannon.</h1>
-                <h2>big <span className='emphasis'><RotatingText text_list={labels}/></span> guy</h2>
+                <h2>big <span className='rotating-label'><RotatingText text_list={labels}/></span> guy</h2>
             </div>
             <div className='small-talk'>
                 <HomeBullet text="i'm a computer science student" />

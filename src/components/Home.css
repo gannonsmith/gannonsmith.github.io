@@ -22,13 +22,11 @@
     grid-area: monologue;
 }
 
-.homebullet {
-    border: red;
-}
-
-.emphasis {
+.rotating-label {
+    padding: 6px;
     font-size: 120%;
-    color: #9282F5;
-    border-bottom: solid #9282F5 4px;
+    color: white;
+    border-radius: 20px;
+    background-color: #9282F5;
     transition: 1s;
 }

@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
+import Reviews from './components/Reviews';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/home' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/projects' element={<Projects />} />
+                <Route path='/reviews' element={<Reviews />} />
                 
               </Routes>
             
