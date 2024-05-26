@@ -14,6 +14,8 @@
 .reviews-page {
     grid-area: reviews-page;
     padding: 5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-bottom: solid 1px #9282F5;
     border-right: solid 1px #9282F5;
     border-left: solid 1px #9282F5;
@@ -31,24 +33,50 @@
 }
 
 .reviews {
-    
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .review {
-    padding: 10px;
-    width: 360px;
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
     height: 200px;
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
+    grid-template-columns: 160px auto;
+    grid-template-rows: 20% auto auto;
     grid-template-areas: 
-    "x";
+    "image title"
+    "image text"
+    "rating text";
+    border-radius: 20px;
     border: solid #999999 1px;
-    background-color: gainsboro;
+    background-color: rgb(238, 238, 238);
 }
 
 .review-img {
     width: 140px;
     height: 140px;
-    border-radius: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.review-title {
+    grid-area: title;
+    margin: 20px;
+}
+
+.review-image {
+    grid-area: image;
+    text-align: center;
+}
+
+.review-text {
+    grid-area: text;
+    margin: 20px;
+}
+
+.review-rating {
+    grid-area: rating;
+    text-align: center;
 }

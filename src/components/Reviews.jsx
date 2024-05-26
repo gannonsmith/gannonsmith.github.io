@@ -1,19 +1,47 @@
 import './Reviews.css';
-
 import { useState } from 'react';
 
+function Star({number}) {
+    let star = <></>;
+    if (number <= 0) {
+        star = <i class="fa fa-star-o" style={{color: "#9282F5"}} aria-hidden="true"></i>;
+    } else if (number === 0.5) {
+        star = <i class="fa fa-star-half-o" style={{color: "#9282F5"}} aria-hidden="true"></i>;
+    } else {
+        star = <i class="fa fa-star" style={{color: "#9282F5"}} aria-hidden="true"></i>;
+    }
+
+    return (
+        <>
+            {star}
+        </>
+    )
+}
+
+function Rating({number}) {
+
+    return(
+        <div className='review-rating'>
+            <Star number={number}/>
+            <Star number={number-1}/>
+            <Star number={number-2}/>
+            <Star number={number-3}/>
+            <Star number={number-4}/>
+        </div>
+    )
+}
+
+
 function Review({title, link, img_path, stars, text}) {
-    const image = <>
-        <a href={link}>
-            <img src={img_path} className='review-img' alt='review'></img>
-        </a>
-    </>;
     
     return(
         <div className='review'>
-            <h2>{title}</h2>
-            {image}
-            <p>{text}</p>
+            <h2 className='review-title'>{title}</h2>
+            <a className='review-image' href={link}>
+                <img src={img_path} className='review-img' alt='review'></img>
+            </a>
+            <Rating number={stars} />
+            <p className='review-text'>{text}</p>
         </div>
     )
 }
@@ -52,26 +80,13 @@ export default function Reviews() {
 
     const [openPage, setOpenPage] = useState('books');
 
-    const bookReviews = <>
-        <Review title='' link='' img_path='' stars='' text='' />
-        <Review title='' link='' img_path='' stars='' text='' />
-    </>;
-    const gamesReviews = <>
-        <Review title='game1' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
-        <Review title='game2' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
-    </>;
-    const moviesReviews = <>
-        <Review title='' link='' img_path='' stars='' text='' />
-        <Review title='' link='' img_path='' stars='' text='' />
-    </>;
-    const foodReviews = <>
-        <Review title='' link='' img_path='' stars='' text='' />
-        <Review title='' link='' img_path='' stars='' text='' />
-    </>;
-    const musicReviews = <>
-        <Review title='' link='' img_path='' stars='' text='' />
-        <Review title='' link='' img_path='' stars='' text='' />
-    </>;
+    const pageStyle = (tabName) => {
+        const style = {
+            'display': tabIsOpen(tabName) ? 'flex': 'none'
+        };
+        console.log(style);
+        return style;
+    }
 
     const handleTabClick = (tabname) => {
         setOpenPage(tabname);
@@ -81,13 +96,38 @@ export default function Reviews() {
         return tabName === openPage;
     }
 
-    const pageStyle = (tabName) => {
-        const style = {
-            'display': tabIsOpen(tabName) ? 'block': 'none'
-        };
-        console.log(style);
-        return style;
-    }
+    const bookReviews = <>
+        <div className='reviews' style={pageStyle('books')}>
+            <Review title='' link='' img_path='' stars='' text='' />
+            <Review title='' link='' img_path='' stars='' text='' />
+        </div>
+    </>;
+    const gamesReviews = <>
+        <div className='reviews' style={pageStyle('games')}>
+            <Review title='game1' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
+            <Review title='game2' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
+            <Review title='game2' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
+            <Review title='game2' link='' img_path='/static/images/arv_photo.jpg' stars='3' text='this is the text' />
+        </div>
+    </>;
+    const moviesReviews = <>
+        <div className='reviews' style={pageStyle('movies')}>
+            <Review title='' link='' img_path='' stars='' text='' />
+            <Review title='' link='' img_path='' stars='' text='' />
+        </div>
+    </>;
+    const foodReviews = <>
+        <div className='reviews' style={pageStyle('food')}>
+            <Review title='' link='' img_path='' stars='' text='' />
+            <Review title='' link='' img_path='' stars='' text='' />
+        </div>
+    </>;
+    const musicReviews = <>
+        <div className='reviews' style={pageStyle('music')}>
+            <Review title='' link='' img_path='' stars='' text='' />
+            <Review title='' link='' img_path='' stars='' text='' />
+        </div>
+    </>;
 
     return (
         <div className='reviews-page-container'>
@@ -97,31 +137,21 @@ export default function Reviews() {
             <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
             <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
             <div className='reviews-page'>
-                <div className='reviews' style={pageStyle('books')}>
-                    <ReviewSection 
-                        reviews={bookReviews}
-                    />
-                </div>
-                <div className='reviews' style={pageStyle('games')}>
-                    <ReviewSection 
-                        reviews={gamesReviews} 
-                    />
-                </div>
-                <div className='reviews' style={pageStyle('movies')}>
-                    <ReviewSection 
-                        reviews={moviesReviews}
-                    />
-                </div>
-                <div className='reviews' style={pageStyle('food')}>
-                    <ReviewSection 
-                        reviews={foodReviews} 
-                    />
-                </div>
-                <div className='reviews' style={pageStyle('music')}>
-                    <ReviewSection 
-                        reviews={musicReviews} 
-                    />
-                </div>
+                <ReviewSection 
+                    reviews={bookReviews}
+                />
+                <ReviewSection 
+                    reviews={gamesReviews} 
+                />
+                <ReviewSection 
+                    reviews={moviesReviews}
+                />
+                <ReviewSection 
+                    reviews={foodReviews} 
+                />
+                <ReviewSection 
+                    reviews={musicReviews} 
+                />
             </div>
         </div>
     )
