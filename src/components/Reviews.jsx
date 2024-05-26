@@ -130,28 +130,37 @@ export default function Reviews() {
     </>;
 
     return (
-        <div className='reviews-page-container'>
-            <Tab title='books' handleClick={handleTabClick} pageIsOpen={tabIsOpen('books')} />
-            <Tab title='games' handleClick={handleTabClick} pageIsOpen={tabIsOpen('games')} />
-            <Tab title='movies' handleClick={handleTabClick} pageIsOpen={tabIsOpen('movies')} />
-            <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
-            <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
-            <div className='reviews-page'>
-                <ReviewSection 
-                    reviews={bookReviews}
-                />
-                <ReviewSection 
-                    reviews={gamesReviews} 
-                />
-                <ReviewSection 
-                    reviews={moviesReviews}
-                />
-                <ReviewSection 
-                    reviews={foodReviews} 
-                />
-                <ReviewSection 
-                    reviews={musicReviews} 
-                />
+        <div className='reviews-container'>
+            <div className='header-container'>
+                <h1>reviews</h1>
+                <div className='staggered-lines'>
+                    <div className='top-line'></div>
+                    <div className='bottom-line'></div>
+                </div>
+            </div>
+            <div className='reviews-page-container'>
+                <Tab title='books' handleClick={handleTabClick} pageIsOpen={tabIsOpen('books')} />
+                <Tab title='games' handleClick={handleTabClick} pageIsOpen={tabIsOpen('games')} />
+                <Tab title='movies' handleClick={handleTabClick} pageIsOpen={tabIsOpen('movies')} />
+                <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
+                <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
+                <div className='reviews-page'>
+                    <ReviewSection 
+                        reviews={bookReviews}
+                    />
+                    <ReviewSection 
+                        reviews={gamesReviews} 
+                    />
+                    <ReviewSection 
+                        reviews={moviesReviews}
+                    />
+                    <ReviewSection 
+                        reviews={foodReviews} 
+                    />
+                    <ReviewSection 
+                        reviews={musicReviews} 
+                    />
+                </div>
             </div>
         </div>
     )

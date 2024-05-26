@@ -1,6 +1,23 @@
+.reviews-container {
+    margin: auto;
+    height: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "header"
+    "reviews";
+    font-family: 'consolas';
+}
 
+.header-container {
+    grid-area: header;
+}
 
 .reviews-page-container {
+    grid-template-areas: reviews;
     padding: 3%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
