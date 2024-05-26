@@ -20,12 +20,19 @@
     grid-template-areas: reviews;
     padding: 3%;
     display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-columns: auto;
     grid-template-rows: 30px auto;
     grid-template-areas: 
-    "books-tab games-tab movies-tab food-tab classes-tab music-tab"
-    "reviews-page reviews-page reviews-page reviews-page reviews-page reviews-page";
+    "tabs"
+    "reviews-page";
     font-family: 'consolas';
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .reviews-page {
@@ -40,6 +47,7 @@
 
 .tab {
     padding: 10px;
+    width: 15%;
     cursor: pointer;
     user-select: none;
     border-right: solid 1px #999999;

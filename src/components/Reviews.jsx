@@ -145,12 +145,14 @@ export default function Reviews() {
                 </div>
             </div>
             <div className='reviews-page-container'>
-                <Tab title='books' handleClick={handleTabClick} pageIsOpen={tabIsOpen('books')} />
-                <Tab title='games' handleClick={handleTabClick} pageIsOpen={tabIsOpen('games')} />
-                <Tab title='movies' handleClick={handleTabClick} pageIsOpen={tabIsOpen('movies')} />
-                <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
-                <Tab title='classes' handleClick={handleTabClick} pageIsOpen={tabIsOpen('classes')} />
-                <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
+                <div className='tabs'>
+                    <Tab title='books' handleClick={handleTabClick} pageIsOpen={tabIsOpen('books')} />
+                    <Tab title='games' handleClick={handleTabClick} pageIsOpen={tabIsOpen('games')} />
+                    <Tab title='movies' handleClick={handleTabClick} pageIsOpen={tabIsOpen('movies')} />
+                    <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
+                    <Tab title='classes' handleClick={handleTabClick} pageIsOpen={tabIsOpen('classes')} />
+                    <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
+                </div>
                 <div className='reviews-page'>
                     <ReviewSection 
                         reviews={bookReviews}
