@@ -122,6 +122,12 @@ export default function Reviews() {
             <Review title='' link='' img_path='' stars='' text='' />
         </div>
     </>;
+    const classReviews = <>
+    <div className='reviews' style={pageStyle('classes')}>
+        <Review title='' link='' img_path='' stars='' text='' />
+        <Review title='' link='' img_path='' stars='' text='' />
+    </div>
+</>;
     const musicReviews = <>
         <div className='reviews' style={pageStyle('music')}>
             <Review title='' link='' img_path='' stars='' text='' />
@@ -143,6 +149,7 @@ export default function Reviews() {
                 <Tab title='games' handleClick={handleTabClick} pageIsOpen={tabIsOpen('games')} />
                 <Tab title='movies' handleClick={handleTabClick} pageIsOpen={tabIsOpen('movies')} />
                 <Tab title='food' handleClick={handleTabClick} pageIsOpen={tabIsOpen('food')} />
+                <Tab title='classes' handleClick={handleTabClick} pageIsOpen={tabIsOpen('classes')} />
                 <Tab title='music' handleClick={handleTabClick} pageIsOpen={tabIsOpen('music')} />
                 <div className='reviews-page'>
                     <ReviewSection 
@@ -156,6 +163,9 @@ export default function Reviews() {
                     />
                     <ReviewSection 
                         reviews={foodReviews} 
+                    />
+                    <ReviewSection 
+                        reviews={classReviews} 
                     />
                     <ReviewSection 
                         reviews={musicReviews} 

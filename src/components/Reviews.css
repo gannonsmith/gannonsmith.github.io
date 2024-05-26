@@ -20,11 +20,11 @@
     grid-template-areas: reviews;
     padding: 3%;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
     grid-template-rows: 30px auto;
     grid-template-areas: 
-    "books-tab games-tab movies-tab food-tab music-tab"
-    "reviews-page reviews-page reviews-page reviews-page reviews-page";
+    "books-tab games-tab movies-tab food-tab classes-tab music-tab"
+    "reviews-page reviews-page reviews-page reviews-page reviews-page reviews-page";
     font-family: 'consolas';
 }
 
