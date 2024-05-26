@@ -38,7 +38,8 @@ export default function Home() {
         'swe',
         'cloud',
         'linux',
-        'umich'
+        'umich',
+        'data'
     ];
     
     return (

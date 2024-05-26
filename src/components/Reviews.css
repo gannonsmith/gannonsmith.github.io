@@ -1,48 +1,54 @@
 
 
-#reviews-page-container {
-    padding: 5%;
-}
-
-.reviews-page {
+.reviews-page-container {
+    padding: 3%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30px auto;
+    grid-template-areas: 
+    "books-tab games-tab movies-tab food-tab music-tab"
+    "reviews-page reviews-page reviews-page reviews-page reviews-page";
     font-family: 'consolas';
 }
 
-.review-panel {
-    text-align: center;
-    border: solid #353535 1px;
+.reviews-page {
+    grid-area: reviews-page;
+    padding: 5%;
+    border-bottom: solid 1px #9282F5;
+    border-right: solid 1px #9282F5;
+    border-left: solid 1px #9282F5;
+}
+
+.tab {
+    padding: 10px;
     cursor: pointer;
+    user-select: none;
+    border-right: solid 1px #999999;
+    border-left: solid 1px #999999;
+    border-top: solid 1px #999999;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.reviews {
+    
 }
 
 .review {
-
+    padding: 10px;
+    width: 360px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "x";
+    border: solid #999999 1px;
+    background-color: gainsboro;
 }
 
 .review-img {
     width: 140px;
     height: 140px;
     border-radius: 40px;
-}
-
-#review-books {
-
-}
-
-#review-games {
-    
-}
-
-#review-movies {
-    
-}
-
-#review-food {
-    
-}
-
-#review-music {
-    
 }
