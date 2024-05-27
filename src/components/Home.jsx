@@ -33,7 +33,6 @@ export default function Home() {
         'ml', 
         'hackathon',
         'cs',
-        'databases',
         'swe',
         'data',
         'agi'
@@ -46,11 +45,16 @@ export default function Home() {
                 <h2>big <span className='rotating-label'><RotatingText text_list={labels}/></span> guy</h2>
             </div>
             <div className='small-talk'>
-                <HomeBullet text="i'm a computer science student" />
-                <HomeBullet text="i entered college as a CE student" />
-                <HomeBullet text="i have a passion for machine learning and ai" />
-                <HomeBullet text="some things i like to do are" />
-                <HomeBullet text="currently i am interning at procter & gamble in cincinnati" />
+                <HomeBullet text="i'm a software engineer/computer scientist pursuing a bachelor's degree in computer science engineering at the university of michigan." />
+                <HomeBullet text="i entered college with the intention of becoming a computer engineer but fell in love with algorithms, computer systems, machine learning, graph theory and all of the ways they overlap to build cool things." />
+                <HomeBullet text="my current interests lie in machine learning, algorithms, web systems, and computer architecture. outside of cse and ece, i'm also interested in economics, physics, and math." />
+                <HomeBullet text="outside of the classroom i'm a lifter, technophile, gamer, hacker, and tourist." />
+                <HomeBullet text="this summer i'm:" />
+                <ul>
+                    <li>interning at procter & gamble in cincinnati, global technical operations database engineering</li>
+                    <li>building the most hype hackathon ever (mhacks17)</li>
+                    <li>filling out this website</li>
+                </ul>
             </div>
         </div>
     )

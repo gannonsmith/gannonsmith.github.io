@@ -30,3 +30,7 @@
     background-color: #9282F5;
     box-shadow: 1px 1px 1px gray;
 }
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}

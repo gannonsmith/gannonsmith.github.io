@@ -69,12 +69,12 @@
     width: 600px;
     height: 200px;
     display: grid;
-    grid-template-columns: 160px auto;
-    grid-template-rows: 20% auto auto;
+    grid-template-columns: 160px auto 20%;
+    grid-template-rows: 20% auto 20%;
     grid-template-areas: 
-    "image title"
-    "image text"
-    "rating text";
+    "image title date"
+    "image text text"
+    "rating text text";
     border-radius: 20px;
     border: solid #999999 1px;
     background-color: rgb(238, 238, 238);
@@ -90,6 +90,11 @@
 .review-title {
     grid-area: title;
     margin: 20px;
+}
+
+.review-date {
+    grid-area: date;
+    color: gray;
 }
 
 .review-image {

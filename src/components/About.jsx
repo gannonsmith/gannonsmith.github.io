@@ -96,7 +96,13 @@ export default function About() {
                 />
                 <Spacer />
                 <Bullet
-                    image_path='/static/images/umichM.png'
+                    image_path='/static/images/lssu_sm_logo.jpg'
+                    title='Lake Superior State University'
+                    text={<>Dual Enrollment</>}
+                />
+                <Spacer />
+                <Bullet
+                    image_path='/static/images/m-tech-logo.jpg'
                     title='Michigan Technological University'
                     text={<>Dual Enrollment</>}
                 />
