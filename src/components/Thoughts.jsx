@@ -25,7 +25,7 @@ function Thought({image_path, title, text}) {
                 <h2>{title}</h2>
             </div>
             <div className='arrow-container'>
-                {open ? <i class="fa-solid fa-angle-down fa-xl"></i>: <i class="fa-solid fa-angle-up fa-xl"></i>}
+                {open ? <i class="fa-solid fa-angle-up fa-xl"></i>:<i class="fa-solid fa-angle-down fa-xl"></i>}
             </div>
             <div className='thought-text' style={textStyle}>
                 {text}
