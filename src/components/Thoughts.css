@@ -6,6 +6,9 @@
     grid-template-areas: 
     "header"
     "body";
+    margin: auto;
+    padding-left: 6%;
+    padding-right: 6%;
     font-family: 'consolas';
 }
 
@@ -48,6 +51,6 @@
     "text text text";
     background-color: rgb(238, 238, 238);
     border-radius: 20px;
-    border: 2px solid #999999;
+    border: solid #353535 1px;
     font-family: 'consolas';
 }

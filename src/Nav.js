@@ -39,7 +39,7 @@ export default function Nav() {
         <Panel link='projects' />
         <Panel link='reviews' />
         <Panel link='thoughts' />
-        <Panel link='etc' />
+        <Panel link='bonus' />
       </div>
       <div className='socials-container'>
         <Social icon='fa fa-envelope fa-xl' link='mailto:gannonsmithr@gmail.com' />

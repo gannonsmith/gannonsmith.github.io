@@ -10,6 +10,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Reviews from './components/Reviews';
 import Thoughts from './components/Thoughts';
+import Bonus from './components/Bonus';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                 <Route path='/projects' element={<Projects />} />
                 <Route path='/reviews' element={<Reviews />} />
                 <Route path='/thoughts' element={<Thoughts />} />
+                <Route path='/bonus' element={<Bonus />} />
                 
               </Routes>
             
