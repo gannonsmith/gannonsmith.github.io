@@ -32,22 +32,11 @@ export default function Home() {
         'tech', 
         'ml', 
         'hackathon',
-        'nlp',
         'cs',
-        'database',
+        'databases',
         'swe',
-        'cloud',
-        'linux',
-        'umich',
         'data',
-        'aabia',
-        'aabia',
-        'aabia',
-        'aabia',
-        'aabia',
-        'aabia',
-        'aabia',
-        'aabia'
+        'agi'
     ];
     
     return (

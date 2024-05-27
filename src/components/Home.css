@@ -28,5 +28,5 @@
     color: white;
     border-radius: 20px;
     background-color: #9282F5;
-    transition: 1s;
+    box-shadow: 1px 1px 1px gray;
 }
