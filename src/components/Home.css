@@ -1,50 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .home {
-    
     display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-rows: 65% auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
     grid-template-areas: 
-    "intro photo"
-    "download photo";
+    "intro monologue";
     padding-top: 8%;
     padding-left: 6%;
     padding-right: 6%;
-    font-family: 'Poppins';
+    font-family: 'Consolas';
     justify-content: space-around;
 }
 
 .introduction {
     grid-area: intro;
+    height: 100%;
 }
 
-.full-portrait-container {
-    grid-area: photo;
-    user-select: none;
+.small-talk {
+    grid-area: monologue;
 }
 
-#full-portrait {
-    width: 400px;
-    border-radius: 100px;
-}
-
-.emphasis {
+.rotating-label {
+    padding: 6px;
     font-size: 120%;
-    color: #9282F5;
-}
-
-.download-resume {
-    grid-area: download;
-    text-align: center;
-}
-
-.download-container {
-    margin: auto;
+    color: white;
+    border-radius: 20px;
     background-color: #9282F5;
-    width: 200px;
-    color: black;
-    border-radius: 30px;
-    text-decoration: none;
-    padding: 1px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
 }
