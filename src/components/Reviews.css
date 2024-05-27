@@ -20,7 +20,7 @@
     grid-template-areas: reviews;
     padding: 3%;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: a;
     grid-template-rows: 30px auto;
     grid-template-areas: 
     "tabs"
@@ -43,6 +43,7 @@
     border-bottom: solid 1px #9282F5;
     border-right: solid 1px #9282F5;
     border-left: solid 1px #9282F5;
+    box-shadow: 6px 6px 6px gray;
 }
 
 .tab {

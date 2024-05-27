@@ -25,87 +25,51 @@
     grid-area: intro;
 }
 
-#work-container {
-    grid-area: work;
-    padding: 20px;
-}
-
-#education-container {
-    grid-area: education;
-    padding: 20px;
-}
-
-.timeline-container {
-    height: auto;
-    border-radius: 20px;
-    background-color: rgb(238, 238, 238);
-    border: solid 1px #666666;
-}
-
-.timeline-dot {
-    justify-content: center;
+.information-container {
     margin: auto;
+    text-align: center;
 }
 
-.company-logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    border: solid #9282F5;
-    display: block;
+.title-container {
+    font-family: 'poppins';
+}
+
+.bullet-container {
     margin: auto;
-}
-
-.timeline-line {
-    width: 2px;
-    margin: auto;
-    background-color: #9282F5;
-}
-
-.timeline-template {
     display: grid;
-    grid-template-columns: 15% auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 50px 150px;
     grid-template-areas: 
-    "timeline date"
-    "timeline school"
-    "timeline title"
-    "timeline courses";
-    padding-bottom: 20px;
+    "image title"
+    "image text";
+    border: solid gray 1px;
+    border-radius: 100px;
+    background-color: rgb(238, 238, 238);
+    transition: 0.5s ease-in-out;
+    font-family: 'poppins';
+    box-shadow: 3px 3px 3px 1px gray;
+    cursor: pointer;
 }
 
-.timeline {
-    grid-area: timeline;
-    padding-top: 16px;
+.spacer-line {
+    margin: auto;
+    width: 0px;
+    height: 50px;
+    border: solid black 1px;
 }
 
-.degree-date {
-    grid-area: date;
-    padding-top: 10px;
-    color: #777777;
+.bullet-img {
+    grid-area: image;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: solid gray 1px;
 }
 
-.degree-school {
-    grid-area: school;
-    padding-top: 10px;
-    font-size: large;
-    font-weight: 1000;
-    color: #9282F5;
-}
-
-.degree-title {
+.title-container {
     grid-area: title;
-    padding-top: 10px;
-    font-weight: 600;
 }
 
-.degree-courses {
-    grid-area: courses;
-    padding-top: 10px;
-}
-
-.outside-list {
-    list-style-position: inside;
-    margin: 0;
-    padding: 0;
+.text-container {
+    grid-area: text;
 }
