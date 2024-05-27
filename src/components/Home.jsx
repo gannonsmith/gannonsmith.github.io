@@ -52,7 +52,7 @@ export default function Home() {
                 <HomeBullet text="this summer i'm:" />
                 <ul>
                     <li>interning at procter & gamble in cincinnati, global technical operations database engineering</li>
-                    <li>building the most hype hackathon ever (mhacks17)</li>
+                    <li>building the most hype hackathon ever <a href='https://www.mhacks.org/' target='_blank' rel='noreferrer'>(mhacks17)</a></li>
                     <li>filling out this website</li>
                 </ul>
             </div>

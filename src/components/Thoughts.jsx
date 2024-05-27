@@ -37,10 +37,7 @@ function Thought({image_path, title, text}) {
 export default function Thoughts() {
 
     const thoughts = <div className='thoughts-body-container'>
-        <Thought image_path='/static/images/arv_photo.jpg' title='Title' text='this is where the text would go' />
-        <Thought image_path='/static/images/arv_photo.jpg' title='Title' text='this is where the text would go' />
-        <Thought image_path='/static/images/arv_photo.jpg' title='Title' text='this is where the text would go' />
-        <Thought image_path='/static/images/arv_photo.jpg' title='Title' text='this is where the text would go' />
+        <Thought image_path='/static/images/thoughts/hello-world.png' title='hello world' text='hey! i just redesigned my website and made a few new features including this thoughts page. here i will be giving my thoughts on various topics. more to come soon!' />
     </div>;
 
     return (
