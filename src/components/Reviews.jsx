@@ -111,7 +111,7 @@ export default function Reviews() {
         <div className='reviews' style={pageStyle('games')}>
             <Review title='Dead Cells' date='May 2024' link='https://en.wikipedia.org/wiki/Dead_Cells' img_path='/static/images/games/dead-cells-cover.jpg' stars={4.5} text={<>great roguelike, still only on 1 bc</>} />
             <Review title='Red Dead Redemption 2' date='May 2024' link='https://www.rockstargames.com/reddeadredemption2/' img_path='/static/images/games/rdr2-logo.jpg' stars={5} text={<>hall of fame game, currently replaying for 100%</>} />
-            <Review title='Fallout 4' date='May 2024' link='https://en.wikipedia.org/wiki/Fallout_4' img_path='/static/images/games/fallout-4-logo.png' stars={4.5} text={<></>} />
+            <Review title='Fallout 4' date='May 2024' link='https://en.wikipedia.org/wiki/Fallout_4' img_path='/static/images/games/fallout-4-logo.png' stars={4.5} text={<>crawl out through the fallout, baby</>} />
         </div>
     </>;
     const moviesReviews = <>
@@ -122,8 +122,9 @@ export default function Reviews() {
     const foodReviews = <>
         <div className='reviews' style={pageStyle('food')}>
             <Review title='Gomez Salsa' date='May 2024' link='https://www.gomezsalsa.com/' img_path='/static/images/food/gomez-logo.jpg' stars={5} text={<>Cincinnati, OH<br></br><br></br>go for the turtle, it is a crazy good cheesy crunchwrap.</>} />
-            <Review title='Skyline Chili' date='' link='https://www.skylinechili.com/' img_path='/static/images/food/skyline-chili-logo.jpg' stars={3} text={<>Cincinnati, OH<br></br><br></br>es okay, chili is a bit bland but it is cheap and filling.</>}/>
-            <Review title='Frita Batidos' date='' link='https://fritabatidos.com/' img_path='/static/images/food/frita-batidos-logo.jpg' stars={4.5} text={<>Ann Arbor, MI<br></br><br></br>love the messy burgers, would recommend getting as many additions as you can afford. i love the passion fruit batido.</>} />
+            <Review title='Skyline Chili' date='May 2024' link='https://www.skylinechili.com/' img_path='/static/images/food/skyline-chili-logo.jpg' stars={3} text={<>Cincinnati, OH<br></br><br></br>es okay, chili is a bit bland but it is cheap and filling.</>}/>
+            <Review title='Frita Batidos' date='May 2024' link='https://fritabatidos.com/' img_path='/static/images/food/frita-batidos-logo.jpg' stars={4.5} text={<>Ann Arbor, MI<br></br><br></br>love the messy burgers, would recommend getting as many additions as you can afford. i love the passion fruit batido.</>} />
+            <Review title='No Thai' date='May 2024' link='https://nothai.com/' img_path='/static/images/food/no-thai-logo.webp' stars={5} text={<>Ann Arbor, MI<br></br><br></br>you shouldn't eat here, you will never be able to stop. i have an addiction to the sweet and spicy chicken</>} />
         </div>
     </>;
     const classReviews = <>
@@ -133,7 +134,7 @@ export default function Reviews() {
 </>;
     const showReviews = <>
         <div className='reviews' style={pageStyle('shows')}>
-            <Review title='Shogun' date='May 2024' link='https://en.wikipedia.org/wiki/Sh%C5%8Dgun_(2024_TV_series)' img_path='/static/images/shows/shogun-poster.webp' stars={5} text='in progress' />
+            <Review title='Shogun' date='May 2024' link='https://en.wikipedia.org/wiki/Sh%C5%8Dgun_(2024_TV_series)' img_path='/static/images/shows/shogun-poster.webp' stars={5} text='great show, would recommend watching' />
         </div>
     </>;
 
