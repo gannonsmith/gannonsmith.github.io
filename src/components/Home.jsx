@@ -33,6 +33,7 @@ export default function Home() {
         'ml', 
         'hackathon',
         'cs',
+        'ai',
         'swe',
         'data',
         'agi'
@@ -46,13 +47,14 @@ export default function Home() {
             </div>
             <div className='small-talk'>
                 <HomeBullet text="i'm a software engineer/computer scientist pursuing a bachelor's degree in computer science engineering at the university of michigan." />
-                <HomeBullet text="i entered college with the intention of becoming a computer engineer but fell in love with algorithms, computer systems, machine learning, graph theory and all of the ways they overlap to build cool things." />
-                <HomeBullet text="my current interests lie in machine learning, algorithms, web systems, and computer architecture. outside of cse and ece, i'm also interested in economics, physics, and math." />
+                <HomeBullet text="i entered college with the intention of becoming a computer engineer but fell in love with machine learning, algorithms, graph theory, computer systems, and all of the ways they overlap to build incredible things." />
+                <HomeBullet text="my current interests lie in machine learning, algorithms, web systems, and computer architecture. outside of cse and ece, i'm also interested in math economics, and physics." />
                 <HomeBullet text="outside of the classroom i'm a lifter, technophile, gamer, hacker, and tourist." />
                 <HomeBullet text="this summer i'm:" />
                 <ul>
                     <li>interning at procter & gamble in cincinnati, global technical operations database engineering</li>
                     <li>building the most hype hackathon ever <a href='https://www.mhacks.org/' target='_blank' rel='noreferrer'>(mhacks17)</a></li>
+                    <li>building a chess ai</li>
                     <li>filling out this website</li>
                 </ul>
             </div>
