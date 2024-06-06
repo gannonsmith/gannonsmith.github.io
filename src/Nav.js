@@ -37,7 +37,6 @@ export default function Nav() {
         <Panel link='home' />
         <Panel link='about' />
         <Panel link='projects' />
-        <Panel link='reviews' />
         <Panel link='thoughts' />
         <Panel link='bonus' />
       </div>
