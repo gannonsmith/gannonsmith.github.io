@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           <div className={isComputer ? "flex flex-row w-full justify-center px-4" : "flex flex-col w-full items-center px-4"}>
-            <div className="flex flex-col space-y-2 flex-wrap p-6">
+            <div className="flex flex-col space-y-4 flex-wrap p-6">
               <div className="text-4xl">
                 Hey, I'm Gannon
               </div>
@@ -46,13 +46,13 @@ export default function Home() {
                 More information about me.
               </div>
               <div className="flex space-x-4">
-                <div className="contact-button">
-                  Github
+                <div className="p-1 rounded shadow-2xl border border-gray-600">
+                  <p>Github</p>
                 </div>
-                <div className="contact-button">
+                <div className="p-1 rounded shadow-2xl border border-gray-600">
                   Linkedin
                 </div>
-                <div className="contact-button">
+                <div className="p-1 rounded shadow-2xl border border-gray-600">
                   Twitter
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center">
               <ProjectCard
                 title={"Bubble"}
-                image={"/images/ford_logo.jpeg"}
+                image={"/images/bubble_logo.png"}
                 description={"Location Sharing App"}
                 skills={"Rust, Postgres"}
               />
@@ -124,13 +124,13 @@ export default function Home() {
               />
               <ProjectCard
                 title={"Jester"}
-                image={"/images/ford_logo.jpeg"}
+                image={"/images/chessboard.png"}
                 description={"A chess engine."}
                 skills={"C++, Game Theory, AB Pruning"}
               />
               <ProjectCard
                 title={"MHacks 2024"}
-                image={"/images/ford_logo.jpeg"}
+                image={"/images/mhacks_2024_page.png"}
                 description={"Hackathon with 800+ participants. Developed the website and judging process."}
                 skills={"Web Development, Nextjs, Python"}
               />
@@ -144,14 +144,14 @@ export default function Home() {
             <div className="text-lg">
               The classes I've taken.
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="grid gap-4">
                     <div>
                       <ClassCard 
                         code={'EECS 470'}
                         title={'Computer Architecture'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog', 'C++']}
                       />
                     </div>
                     <div>
@@ -159,7 +159,7 @@ export default function Home() {
                         code={'EECS 482'}
                         title={'Operating Systems'}
                         description={'verilog galore'}
-                        skills={'C++'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -167,7 +167,7 @@ export default function Home() {
                         code={'EECS 388'}
                         title={'Computer Security'}
                         description={'verilog galore'}
-                        skills={'Python'}
+                        skills={['Verilog']}
                       />
                     </div>
                 </div>
@@ -177,7 +177,7 @@ export default function Home() {
                         code={'EECS 445'}
                         title={'Machine Learning'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -185,7 +185,7 @@ export default function Home() {
                         code={'EECS 492'}
                         title={'Artificial Intelligence'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -193,7 +193,7 @@ export default function Home() {
                         code={'EECS 281'}
                         title={'Data Structures and Algorithmns'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                 </div>
@@ -203,7 +203,7 @@ export default function Home() {
                         code={'EECS 485'}
                         title={'Web Systems'}
                         description={'verilog galore'}
-                        skills={'Flask, Web Development'}
+                        skills={['Flask', 'Web Development']}
                       />
                     </div>
                     <div>
@@ -211,7 +211,7 @@ export default function Home() {
                         code={'EECS 376'}
                         title={'Computer Science Theory'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -219,7 +219,7 @@ export default function Home() {
                         code={'EECS 280'}
                         title={'Computer Architecture'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                 </div>
@@ -229,7 +229,7 @@ export default function Home() {
                         code={'EECS 370'}
                         title={'Computer Organization'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -237,7 +237,7 @@ export default function Home() {
                         code={'EECS 270'}
                         title={'Logic Design'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                     <div>
@@ -245,7 +245,7 @@ export default function Home() {
                         code={'EECS 215'}
                         title={'Introduction to Circuits'}
                         description={'verilog galore'}
-                        skills={'Verilog'}
+                        skills={['Verilog']}
                       />
                     </div>
                 </div>
