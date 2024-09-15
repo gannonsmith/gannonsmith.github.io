@@ -5,6 +5,7 @@ import ExperienceCard from "./components/job_card";
 import ProjectCard from "./components/project_card";
 import ClassCard from "./components/class_card";
 
+
 export default function Home() {
 
   const [isComputer, setIsComputer] = useState(true);
@@ -17,13 +18,30 @@ export default function Home() {
 
   return (
     <div>
-      <main className="pb-16 overflow-x-hidden">
-        <div className="nav bg-zinc-800 flex flex-col w-screen p-2 static top-0 border-b-1 border-black">
-          <div className="text-2xl">
-            Gannon Smith
+      <header>
+        <div className="bg-zinc-800 text-white flex flex-row justify-between w-screen p-2 fixed top-0 z-50 border-b-1 border-black">
+          <div>
+            <div className="text-2xl">
+              Gannon Smith
+            </div>
+          </div>
+          <div className="flex flex-row space-x-8 justify-between pr-10">
+            <div className="text-xl">
+              <a href="#home">Home</a>
+            </div>
+            <div className="text-xl">
+              <a href="#experience">Experience</a>
+            </div>
+            <div className="text-xl">
+              <a href="#projects">Projects</a>
+            </div>
+            <div className="text-xl">
+              <a href="#classes">Classes</a>
+            </div>
           </div>
         </div>
-
+      </header>
+      <main id="home" className="relative pb-16 overflow-x-hidden">
         <div className="flex flex-col w-screen">
           <div className="w-screen border-b-2 border-black" style={isComputer ? {position: 'relative', width: '100%', height: '300px'} : {position: 'relative', width: '100%', height: '100px'}}>
             <Image
@@ -46,13 +64,16 @@ export default function Home() {
                 More information about me.
               </div>
               <div className="flex space-x-4">
-                <div className="p-1 rounded shadow-2xl border border-gray-600">
+                <div className="flex px-1 py-0.5 rounded shadow-2xl border border-gray-600 justify-center items-center">
+                  <div className="text-xl w-8 bg-purple-100 flex justify-center items-center mx-auto">
+                    <i className="fa-brands fa-github"></i>
+                  </div>
                   <p>Github</p>
                 </div>
-                <div className="p-1 rounded shadow-2xl border border-gray-600">
+                <div className="flex px-1 py-0.5 rounded shadow-2xl border border-gray-600">
                   Linkedin
                 </div>
-                <div className="p-1 rounded shadow-2xl border border-gray-600">
+                <div className="flex px-1 py-0.5 rounded shadow-2xl border border-gray-600">
                   Twitter
                 </div>
               </div>
@@ -70,7 +91,7 @@ export default function Home() {
 
           <div className="h-64"></div>
 
-          <div className="below-intro flex flex-col items-center space-y-6 p-10">
+          <div id="experience" className="below-intro flex flex-col items-center space-y-6 p-10 pt-16">
             <div className="text-4xl">
               Experience
             </div>
@@ -82,27 +103,27 @@ export default function Home() {
                 title={"Software Engineering Intern"}
                 company={"Michigan Medicine"}
                 image={"/images/michigan_medicine_logo.jpg"}
-                bullets={["first bullet", "second bullet"]}
+                bullets={[]}
                 skills={[]}
               />
               <ExperienceCard
                 title={"Connected Data Software Intern"}
                 company={"Ford Motor Company"}
                 image={"/images/ford_logo.jpeg"}
-                bullets={["first bullet", "second bullet"]}
+                bullets={[]}
                 skills={[]}
               />
               <ExperienceCard
                 title={"Software Engineering Intern"}
                 company={"Procter & Gamble"}
                 image={"/images/p&g_logo.jpg"}
-                bullets={["first bullet", "second bullet"]}
+                bullets={[]}
                 skills={[]}
               />
             </div>
           </div>
 
-          <div className="below-intro flex flex-col items-center space-y-6 p-10">
+          <div id="projects" className="below-intro flex flex-col items-center space-y-6 p-10 pt-16">
             <div className="text-4xl">
               Projects
             </div>
@@ -137,7 +158,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="below-intro flex flex-col items-center space-y-6 p-10">
+          <div id="classes" className="below-intro flex flex-col items-center space-y-6 p-10 pt-16">
             <div className="text-4xl">
               Classes
             </div>

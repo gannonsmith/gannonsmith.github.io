@@ -14,9 +14,9 @@ export default function ClassCard({code, title, description, skills}) {
         <div className="hide-on-tablet">
             <p>{description}</p>
         </div>
-        <div className="hide-on-tablet flex flex-row flex-wrap border-4 border-indigo-500/100">
+        <div className="hide-on-tablet flex flex-row flex-wrap">
             {skills.map((val: any, index: any) => (
-                <div className="m-1 rounded text-xs font-medium py-0.5 px-1 inline-flex" style={{backgroundColor: colors[index]}}>
+                <div className="border border-black m-1 rounded text-xs font-medium py-0.5 px-1 inline-flex" style={{backgroundColor: colors[index]}}>
                     {val}
                 </div>
             ))}
