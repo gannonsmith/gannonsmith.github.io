@@ -18,56 +18,21 @@ export default function Home() {
 
   return (
     <div>
-      <header>
-        <div className="bg-zinc-800 text-white flex flex-row justify-between w-screen p-2 fixed top-0 z-50 border-b-1 border-black">
-          <div>
-            <div className="text-2xl">
-              Gannon Smith
-            </div>
-          </div>
-          <div className="flex flex-row space-x-8 justify-between pr-10">
-            <div className="text-xl">
-              <a href="#home">Home</a>
-            </div>
-            <div className="text-xl">
-              <a href="#experience">Experience</a>
-            </div>
-            <div className="text-xl">
-              <a href="#projects">Projects</a>
-            </div>
-            <div className="text-xl">
-              <a href="#classes">Classes</a>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main id="home" className="relative pb-16 overflow-x-hidden">
+      <main id="home" className="relative overflow-x-hidden">
         <div className="flex flex-col w-screen">
-          <div className="w-screen border-b-2 border-black" style={isComputer ? {position: 'relative', width: '100%', height: '300px'} : {position: 'relative', width: '100%', height: '100px'}}>
-            <Image
-              src="/images/acadia_pan.png"
-              fill
-              objectFit="cover"
-              alt="panorama of acadia"
-            />
-          </div>
-
-          <div className={isComputer ? "flex flex-row w-full justify-center px-4" : "flex flex-col w-full items-center px-4"}>
-            <div className="flex flex-col space-y-4 flex-wrap p-6">
-              <div className="text-4xl">
-                Hey, I'm Gannon
+          <div className={isComputer ? "h-screen flex flex-row w-full px-4" : "h-screen flex flex-col w-full items-center px-4"}>
+            <div className={isComputer ? "flex flex-col space-y-4 flex-wrap p-36" : "flex flex-col space-y-4 flex-wrap p-8 pt-32"}>
+              <div className={isComputer ? "text-8xl" : "text-5xl"}>
+                Gannon Smith.
               </div>
-              <div className="text-lg">
-                I'm a student at the University of Michigan studying Computer Science Engineering.
+              <div className={isComputer ? "text-5xl text-violet-400" : "text-3xl text-violet-400"}>
+                I build things.
               </div>
-              <div className="text-lg">
+              <div className="text-2xl">
                 More information about me.
               </div>
               <div className="flex space-x-4">
                 <div className="flex px-1 py-0.5 rounded shadow-2xl border border-gray-600 justify-center items-center">
-                  <div className="text-xl w-8 bg-purple-100 flex justify-center items-center mx-auto">
-                    <i className="fa-brands fa-github"></i>
-                  </div>
                   <p>Github</p>
                 </div>
                 <div className="flex px-1 py-0.5 rounded shadow-2xl border border-gray-600">
@@ -78,18 +43,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={isComputer ? "relative bottom-32" : ""}>
-              <Image
-                className="shadow-2xl rounded-3xl border-2 border-black hide-on-tablet"
-                src="/images/maine_selfie.jpg"
-                width={isComputer ? 400 : 200}
-                height={isComputer ? 400 : 200}
-                alt="selfie in acadia"
-              />
+            <div className="hide-on-tablet flex items-center border border-black">
+              <div>
+                <Image
+                  className="shadow-2xl rounded-full border border-gray-800 hide-on-tablet"
+                  src="/images/maine_selfie.jpg"
+                  width={400}
+                  height={400}
+                  alt="selfie in acadia"
+                />
+              </div>
             </div>
           </div>
-
-          <div className="h-64"></div>
 
           <div id="experience" className="below-intro flex flex-col items-center space-y-6 p-10 pt-16">
             <div className="text-4xl">
@@ -158,7 +123,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="classes" className="below-intro flex flex-col items-center space-y-6 p-10 pt-16">
+          <div id="classes" className="pb-48 below-intro flex flex-col items-center space-y-6 p-10 pt-16">
             <div className="text-4xl">
               Classes
             </div>
