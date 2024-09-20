@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from 'next/link'
 
 import ExperienceCard from "./components/job_card";
 import ProjectCard from "./components/project_card";
@@ -26,9 +25,6 @@ export default function Home() {
     <main id="home" className="snap-y snap-proximity relative overflow-x-hidden overflow-y-scroll">
       <div className="flex flex-col w-screen">
         <div className="h-screen flex flex-col px-4 pt-8">
-          {false && <Link href="/fun" className="hover:cursor-pointer text-xl border border-black bg-zinc-200 rounded mx-auto py-2 px-4 shadow-2xl">
-            fun stuff
-          </Link>}
           <div className={isComputer ? "snap-start flex flex-row w-full" : "snap-start flex flex-col w-full items-center"}>
             <div className={isComputer ? "flex flex-col space-y-4 flex-wrap p-36 w-8/12" : "flex flex-col space-y-4 flex-wrap p-8 pt-32"}>
               <div className={isComputer ? "text-8xl" : "text-5xl"}>
@@ -38,7 +34,7 @@ export default function Home() {
                 I build things.
               </div>
               <div className="text-2xl">
-                I'm a computer science engineering student at the University of Michigan. 
+                <p>I&apos;m a computer science engineering student at the University of Michigan.</p>
               </div>
               <div className="flex space-x-4">
                 <a href="https://www.linkedin.com/in/gannonsmith/" target="_blank">
@@ -110,7 +106,7 @@ export default function Home() {
             Projects
           </div>
           <div className="text-lg">
-            Some cool projects I've worked on.
+            <p>Some cool projects I&apos;ve worked on.</p>
           </div>
           <div className="flex flex-wrap justify-center">
             <ProjectCard
@@ -149,7 +145,7 @@ export default function Home() {
             Classes
           </div>
           <div className="text-lg">
-            Some of the classes I've taken.
+            <p>Some of the classes I&apos;ve taken.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="grid gap-4">

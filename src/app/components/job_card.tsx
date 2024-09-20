@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-export default function ExperienceCard({title, company, image, bullets, skills}) {
+interface ExperienceCardProps {
+    title: string;
+    company: string;
+    image: string;
+    bullets: string[];
+    skills: string[];  
+}
+
+export default function ExperienceCard({title, company, image, bullets, skills}: ExperienceCardProps) {
 
   return (
     <div className="m-6 flex flex-col rounded-3xl w-96 h-auto shadow-2xl border border-gray-300">
@@ -18,6 +26,7 @@ export default function ExperienceCard({title, company, image, bullets, skills})
             <div className="text-md text-gray-400">
                 {company}
             </div>
+            {false && skills}
             <div>
                 <ul>
                     {bullets.map((item: string, index: number) => {

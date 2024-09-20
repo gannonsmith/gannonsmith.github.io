@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-export default function ProjectCard({title, link, image, description, skills}) {
+interface ProjectCardProps {
+    title: string;
+    link: string;
+    image: string;
+    description: string;
+    skills: string;  
+}
+
+export default function ProjectCard({title, link, image, description, skills}: ProjectCardProps) {
 
   return (
     <a href={link} target="_blank">

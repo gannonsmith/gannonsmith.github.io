@@ -1,6 +1,13 @@
 
-export default function ClassCard({code, title, description, skills}) {
-    var skill_to_color: { [skill: string]: string } = {
+interface ClassCardProps {
+    code: string;
+    title: string;
+    description: string;
+    skills: string[];  
+}
+
+export default function ClassCard({code, title, description, skills}: ClassCardProps) {
+    const skill_to_color: { [skill: string]: string } = {
         "C++": "#960018",
         "Verilog": "#2072AF",
         "C": "#ff4f00",
@@ -23,8 +30,8 @@ export default function ClassCard({code, title, description, skills}) {
             <p>{description}</p>
         </div>
         <div className="hide-on-tablet flex flex-row flex-wrap">
-            {skills.map((val: any, index: any) => (
-                <div className="m-1 border border-gray-200 rounded-md text-xs font-medium py-0.5 px-1 inline-flex text-white" style={{backgroundColor: skill_to_color[val]}}>
+            {skills.map((val: string, index: number) => (
+                <div key={"class-skill" + code + index} className="m-1 border border-gray-200 rounded-md text-xs font-medium py-0.5 px-1 inline-flex text-white" style={{backgroundColor: skill_to_color[val]}}>
                     {val}
                 </div>
             ))}
