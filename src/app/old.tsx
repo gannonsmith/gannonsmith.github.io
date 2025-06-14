@@ -2,9 +2,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-import ExperienceCard from "./components/job_card";
-import ProjectCard from "./components/project_card";
-import ClassCard from "./components/class_card";
+import ExperienceCard from "./sections/job_card";
+import ProjectCard from "./sections/project_card";
+import ClassCard from "./sections/class_card";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

@@ -1,13 +1,13 @@
 "use client";
 
-import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
-import Classes from "./components/Classes";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
+import Landing from "./sections/Landing";
+import Navbar from "./sections/Navbar";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Projects from "./sections/Projects";
+import Classes from "./sections/Classes";
+import Blog from "./sections/Blog";
+import Contact from "./sections/Contact";
 import { getAllPosts } from "./lib/posts";
 import { get } from "http";
 
