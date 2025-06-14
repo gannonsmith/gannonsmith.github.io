@@ -2,6 +2,8 @@
 
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Landing() {
   return (
@@ -13,10 +15,6 @@ export default function Landing() {
             <div className="absolute w-[400px] h-[400px] bg-blue-400 rounded-full blur-3xl opacity-25 animate-blob" style={{ top: '40%', left: '30%', animationDelay: '4s' }} />
 
         </div>
-
-
-
-        
 
       {/* Hero Content */}
       <motion.h1
@@ -73,13 +71,34 @@ export default function Landing() {
         </a>
       </motion.div>
 
+      {/* Social Links */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.9, duration: 0.8 }}
+        className="flex items-center justify-center mt-0 space-x-4"
+      >
+        <div className="flex items-center justify-left mt-10 space-x-4">
+          <a href="https://www.linkedin.com/in/gannonsmith/" target="_blank">
+            <div className="bg-gray-800 text-gray-200 flex space-x-1 px-2 py-1 rounded shadow-2xl justify-center items-center hover:cursor-pointer hover:bg-gray-700 transition">
+              <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+            </div>
+          </a>
+          <a href="https://github.com/gannonsmith" target="_blank">
+            <div className="bg-gray-800 text-gray-200 flex space-x-1 px-2 py-1 rounded shadow-2xl justify-center items-center hover:cursor-pointer hover:bg-gray-700 transition">
+              <FontAwesomeIcon icon={faGithub} size="xl"/>
+            </div>
+          </a>
+        </div>
+      </motion.div>
+
       {/* Coffee Chat CTA */}
       <motion.a
         href="#contact"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.6 }}
-        className="text-sm p-3 mt-4 text-purple-300 underline"
+        className="text-sm p-3 mt-0 text-purple-300 underline"
       >
         Want to grab a virtual coffee? ☕
       </motion.a>

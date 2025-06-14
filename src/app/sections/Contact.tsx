@@ -2,6 +2,9 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -46,6 +49,26 @@ export default function Contact() {
         </button>
         {status && <p className="text-sm mt-2 text-purple-300">{status}</p>}
       </form>
+      <div className="flex items-center justify-left mt-10 space-x-4">
+        <a href="https://www.linkedin.com/in/gannonsmith/" target="_blank">
+          <div className="bg-gray-800 text-gray-200 flex space-x-1 px-2 py-1 rounded shadow-2xl justify-center items-center hover:cursor-pointer hover:bg-gray-700 transition">
+            <FontAwesomeIcon icon={faLinkedin} />
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        <a href="https://github.com/gannonsmith" target="_blank">
+          <div className="bg-gray-800 text-gray-200 flex space-x-1 px-2 py-1 rounded shadow-2xl justify-center items-center hover:cursor-pointer hover:bg-gray-700 transition">
+            <FontAwesomeIcon icon={faGithub} />
+            <p>Github</p>
+          </div>
+        </a>
+        <a href="mailto:gannonsmithr@gmail.com">
+          <div className="bg-gray-800 text-gray-200 flex space-x-1 px-2 py-1 rounded shadow-2xl justify-center items-center hover:cursor-pointer hover:bg-gray-700 transition">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <p>Email</p>
+          </div>
+        </a>
+      </div>
     </section>
   );
 }
