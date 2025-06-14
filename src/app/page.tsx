@@ -8,8 +8,6 @@ import Projects from "./sections/Projects";
 import Classes from "./sections/Classes";
 import Blog from "./sections/Blog";
 import Contact from "./sections/Contact";
-import { getAllPosts } from "./lib/posts";
-import { get } from "http";
 
 export default function Portfolio() {
   const showBlog = false; // Set to true to show blog section

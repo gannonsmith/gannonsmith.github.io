@@ -43,7 +43,7 @@ export default function Contact() {
       <form ref={form} onSubmit={sendEmail} className="grid gap-4 max-w-xl">
         <input name="name" type="text" required placeholder="Your Name" className="bg-gray-800 p-3 rounded-md text-sm" />
         <input name="email" type="email" required placeholder="Your Email" className="bg-gray-800 p-3 rounded-md text-sm" />
-        <textarea name="message" rows="4" required placeholder="Message" className="bg-gray-800 p-3 rounded-md text-sm" />
+        <textarea name="message" rows={4} required placeholder="Message" className="bg-gray-800 p-3 rounded-md text-sm" />
         <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-md">
           Send Message
         </button>

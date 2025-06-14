@@ -16,7 +16,7 @@ export default function BlogPost({ slug }: { slug: string }) {
       const text = await res.text();
       const { data, content } = matter(text);
       setContent(content);
-      setMeta(data as any);
+      setMeta(data as { title: string; date: string; description: string });
     };
 
     fetchMarkdown();
