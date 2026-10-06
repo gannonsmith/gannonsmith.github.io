@@ -60,7 +60,7 @@ export default function Portfolio() {
 
       <section id="top" className="hero section-wrap">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="status-dot" /> Cincinnati, OH · currently at P&amp;G</p>
+          <p className="eyebrow"><span className="status-dot" /> Cincinnati, OH · currently making soap at P&amp;G</p>
           <h1>Software engineering,<br /><em>all the way down.</em></h1>
           <p className="hero-intro">I&apos;m Gannon Smith, a software engineer who moves comfortably between the application and the architecture underneath it.</p>
           <div className="hero-actions">
