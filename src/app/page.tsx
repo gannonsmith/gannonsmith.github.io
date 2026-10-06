@@ -17,10 +17,12 @@ const artifacts: Artifact[] = [
   { id: "bubble", label: "03 / systems", title: "Bubble", body: "A secure location-sharing and messaging system. A team project where the interesting work lived below the interface.", detail: "Rust · Axum · encrypted messaging", accent: "green" },
 ];
 
+const systemCreature = "  +----+\n  | [] |\n  | || |  HELLO, WORLD\n  +----+\n   _||_";
+
 const notes = [
   ["reading", "A Tour of C++", "still finding corners I missed the first time"],
-  ["building", "a better portfolio", "this is the first sketch"],
-  ["playing", "Rocket League", "mechanics remain humbling"],
+  ["thinking", "systems with personality", "the useful stuff lives between layers"],
+  ["playing", "chess, badly but seriously", "mechanics remain humbling"],
 ];
 
 function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -67,7 +69,7 @@ export default function Portfolio() {
             <a className="text-link" href="https://github.com/gannonsmith" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
           </div>
         </div>
-        <div className="hero-scribble" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" /><div className="orbit-node node-one" /><div className="orbit-node node-two" /><div className="orbit-core">⌁</div><span className="scribble-label label-top">software</span><span className="scribble-label label-right">hardware</span><span className="scribble-label label-bottom">curiosity</span><span className="scribble-arrow">↗</span></div>
+        <div className="hero-scribble" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" /><div className="orbit-node node-one" /><div className="orbit-node node-two" /><div className="orbit-core">⌁</div><span className="scribble-label label-top">software</span><span className="scribble-label label-right">hardware</span><span className="scribble-label label-bottom">curiosity</span><span className="scribble-arrow">↗</span><div className="ascii-creature"><span className="ascii-index">SYS / 001</span><pre>{systemCreature}</pre><span className="ascii-caption">small systems, strange ideas</span></div></div>
       </section>
 
       <section className="signal-strip" aria-label="Selected facts"><div><strong>01</strong><span>systems thinker</span></div><div><strong>02</strong><span>builder at heart</span></div><div><strong>03</strong><span>always learning</span></div><p>Good engineering is a conversation<br />between constraints and imagination.</p></section>
@@ -79,14 +81,14 @@ export default function Portfolio() {
             {artifacts.map((artifact) => <button key={artifact.id} className={`artifact-tab ${selected.id === artifact.id ? "is-selected" : ""}`} onClick={() => setSelected(artifact)} role="tab" aria-selected={selected.id === artifact.id}><span className={`artifact-number ${artifact.accent}`}>{artifact.label.split(" ")[0]}</span><span><strong>{artifact.title}</strong><small>{artifact.detail}</small></span><span className="tab-arrow">{selected.id === artifact.id ? "↗" : "→"}</span></button>)}
             <a className="all-work" href="https://github.com/gannonsmith" target="_blank" rel="noreferrer">See more on GitHub <span>↗</span></a>
           </div>
-          <article className={`artifact-card ${selected.accent}`} role="tabpanel"><div className="card-topline"><span>{selected.label}</span><span>field notes / 2025</span></div><div className={`artifact-visual visual-${selected.id}`} aria-hidden="true"><div className="visual-grid" /><div className="visual-wave wave-a" /><div className="visual-wave wave-b" /><div className="visual-pulse" /><div className="visual-path" /><span className="visual-metric">{selected.id === "alignment" ? "30×" : selected.id === "chess" ? "∞" : "01"}</span></div><h3>{selected.title}</h3><p>{selected.body}</p><div className="card-footer"><span>{selected.detail}</span><span className="card-mark">GS / {selected.id}</span></div></article>
+          <article className={`artifact-card ${selected.accent}`} role="tabpanel"><div className="card-topline"><span>{selected.label}</span><span>field notes / 2026</span></div><div className={`artifact-visual visual-${selected.id}`} aria-hidden="true"><div className="visual-grid" /><div className="visual-wave wave-a" /><div className="visual-wave wave-b" /><div className="visual-pulse" /><div className="visual-path" /><span className="visual-ascii">{selected.id === "alignment" ? "[||||]" : selected.id === "chess" ? "e4  e5" : "{•••}"}</span><span className="visual-metric">{selected.id === "alignment" ? "30×" : selected.id === "chess" ? "∞" : "01"}</span></div><h3>{selected.title}</h3><p>{selected.body}</p><div className="card-footer"><span>{selected.detail}</span><span className="card-mark">GS / {selected.id}</span></div></article>
         </div>
       </section>
 
       <section id="notes" className="section-wrap notes-section"><Reveal className="section-heading compact"><div><p className="eyebrow">A little more human</p><h2>Current <em>notes.</em></h2></div><p className="heading-note">A running list of things occupying my attention. It changes as I do.</p></Reveal><div className="notes-grid">{notes.map(([kind, title, detail], index) => <Reveal className="note" delay={index * 90} key={kind}><span className="note-index">0{index + 1}</span><p className="note-kind">{kind}</p><h3>{title}</h3><p>{detail}</p></Reveal>)}</div></section>
 
-      <section id="about" className="about-section"><div className="section-wrap about-inner"><p className="eyebrow">A short introduction</p><div className="about-content"><h2>Serious about the work.<br /><em>Not too serious about myself.</em></h2><div><p>I&apos;m a software engineer at Procter &amp; Gamble and a University of Michigan engineer by training. My favorite projects are the ones that make me learn a new layer of the stack.</p><p>When I&apos;m away from the terminal, I&apos;m probably at the gym, playing something competitive, or trying to explain why a seemingly small detail matters.</p><a className="text-link dark-link" href="mailto:gannonsmithr@gmail.com">Let&apos;s talk <span>↗</span></a></div></div></div></section>
-      <footer className="site-footer section-wrap"><span>© 2025 Gannon Smith</span><span>Built with care, curiosity, and too many tabs.</span><div><a href="https://github.com/gannonsmith" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/gannonsmith/" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
+      <section id="about" className="about-section"><div className="section-wrap about-inner"><p className="eyebrow">A short introduction</p><div className="about-content"><h2>Serious about the work.<br /><em>Not too serious about myself.</em></h2><div><p>I&apos;m a software engineer at Procter &amp; Gamble and a University of Michigan engineer by training. I like ambitious projects with real constraints, then figuring out how to make them fast, understandable, and useful.</p><p>When I&apos;m away from the terminal, I&apos;m usually thinking about chess engines, aquariums, plants, or some system that is more interesting than it first appears.</p><a className="text-link dark-link" href="mailto:gannonsmithr@gmail.com">Let&apos;s talk <span>↗</span></a></div></div></div></section>
+      <footer className="site-footer section-wrap"><span>© 2026 Gannon Smith</span><span>Built with care, curiosity, and too many tabs.</span><div><a href="https://github.com/gannonsmith" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/gannonsmith/" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
     </main>
   );
 }
