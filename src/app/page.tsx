@@ -61,7 +61,7 @@ export default function Portfolio() {
 
       <section id="top" className="hero section-wrap">
         <div className="hero-copy">
-          <p className="eyebrow"><span className="status-dot" /> Cincinnati, OH · software engineer at P&amp;G</p>
+          <p className="eyebrow"><span className="status-dot" /> Cincinnati, OH · currently making soap at P&amp;G</p>
           <h1>I build software<br /><em>across the stack.</em></h1>
           <p className="hero-intro">I&apos;m Gannon Smith. I build software, then keep digging into the systems underneath it—from backend services to C++ and FPGA projects.</p>
           <div className="hero-actions">
